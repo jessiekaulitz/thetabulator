@@ -22,7 +22,9 @@ namespace TheTabulator
 
         public void SaveEvent(StreamWriter streamWriter)
         {
+            DateTime cake = new DateTime();
 
+            cake.DayOfWeek;
         }
 
         public void LoadEvent(StreamReader streamReader)

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.calendarFeatureLabel = new System.Windows.Forms.Label();
             this.monthLabel = new System.Windows.Forms.Label();
             this.yearLabel = new System.Windows.Forms.Label();
@@ -70,16 +71,19 @@
             this.fridayLabel = new System.Windows.Forms.Label();
             this.sundayLabel = new System.Windows.Forms.Label();
             this.saturdayLabel = new System.Windows.Forms.Label();
+            this.eventBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.calendarTable.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.eventBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // calendarFeatureLabel
             // 
             this.calendarFeatureLabel.AutoSize = true;
             this.calendarFeatureLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.calendarFeatureLabel.Location = new System.Drawing.Point(669, 17);
+            this.calendarFeatureLabel.Location = new System.Drawing.Point(892, 21);
+            this.calendarFeatureLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.calendarFeatureLabel.Name = "calendarFeatureLabel";
-            this.calendarFeatureLabel.Size = new System.Drawing.Size(220, 55);
+            this.calendarFeatureLabel.Size = new System.Drawing.Size(272, 69);
             this.calendarFeatureLabel.TabIndex = 0;
             this.calendarFeatureLabel.Text = "Calendar";
             // 
@@ -87,9 +91,10 @@
             // 
             this.monthLabel.AutoSize = true;
             this.monthLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.monthLabel.Location = new System.Drawing.Point(277, 41);
+            this.monthLabel.Location = new System.Drawing.Point(369, 50);
+            this.monthLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.monthLabel.Name = "monthLabel";
-            this.monthLabel.Size = new System.Drawing.Size(89, 25);
+            this.monthLabel.Size = new System.Drawing.Size(111, 31);
             this.monthLabel.TabIndex = 1;
             this.monthLabel.Text = "January";
             this.monthLabel.Click += new System.EventHandler(this.MonthLabel_Click);
@@ -98,9 +103,10 @@
             // 
             this.yearLabel.AutoSize = true;
             this.yearLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.yearLabel.Location = new System.Drawing.Point(361, 41);
+            this.yearLabel.Location = new System.Drawing.Point(481, 50);
+            this.yearLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.yearLabel.Name = "yearLabel";
-            this.yearLabel.Size = new System.Drawing.Size(60, 25);
+            this.yearLabel.Size = new System.Drawing.Size(74, 31);
             this.yearLabel.TabIndex = 10;
             this.yearLabel.Text = "2019";
             // 
@@ -108,9 +114,10 @@
             // 
             this.mondayDateLabel.AutoSize = true;
             this.mondayDateLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mondayDateLabel.Location = new System.Drawing.Point(220, 104);
+            this.mondayDateLabel.Location = new System.Drawing.Point(293, 128);
+            this.mondayDateLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.mondayDateLabel.Name = "mondayDateLabel";
-            this.mondayDateLabel.Size = new System.Drawing.Size(33, 24);
+            this.mondayDateLabel.Size = new System.Drawing.Size(44, 29);
             this.mondayDateLabel.TabIndex = 11;
             this.mondayDateLabel.Text = "1st";
             // 
@@ -118,9 +125,10 @@
             // 
             this.tuesdayDateLabel.AutoSize = true;
             this.tuesdayDateLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tuesdayDateLabel.Location = new System.Drawing.Point(351, 104);
+            this.tuesdayDateLabel.Location = new System.Drawing.Point(468, 128);
+            this.tuesdayDateLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.tuesdayDateLabel.Name = "tuesdayDateLabel";
-            this.tuesdayDateLabel.Size = new System.Drawing.Size(42, 24);
+            this.tuesdayDateLabel.Size = new System.Drawing.Size(53, 29);
             this.tuesdayDateLabel.TabIndex = 12;
             this.tuesdayDateLabel.Text = "2nd";
             // 
@@ -128,9 +136,10 @@
             // 
             this.wednesdayDateLabel.AutoSize = true;
             this.wednesdayDateLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.wednesdayDateLabel.Location = new System.Drawing.Point(490, 104);
+            this.wednesdayDateLabel.Location = new System.Drawing.Point(653, 128);
+            this.wednesdayDateLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.wednesdayDateLabel.Name = "wednesdayDateLabel";
-            this.wednesdayDateLabel.Size = new System.Drawing.Size(37, 24);
+            this.wednesdayDateLabel.Size = new System.Drawing.Size(48, 29);
             this.wednesdayDateLabel.TabIndex = 13;
             this.wednesdayDateLabel.Text = "3rd";
             // 
@@ -138,9 +147,10 @@
             // 
             this.thursdayDateLabel.AutoSize = true;
             this.thursdayDateLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.thursdayDateLabel.Location = new System.Drawing.Point(627, 104);
+            this.thursdayDateLabel.Location = new System.Drawing.Point(836, 128);
+            this.thursdayDateLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.thursdayDateLabel.Name = "thursdayDateLabel";
-            this.thursdayDateLabel.Size = new System.Drawing.Size(35, 24);
+            this.thursdayDateLabel.Size = new System.Drawing.Size(45, 29);
             this.thursdayDateLabel.TabIndex = 14;
             this.thursdayDateLabel.Text = "4th";
             // 
@@ -148,9 +158,10 @@
             // 
             this.fridayDateLabel.AutoSize = true;
             this.fridayDateLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.fridayDateLabel.Location = new System.Drawing.Point(763, 104);
+            this.fridayDateLabel.Location = new System.Drawing.Point(1017, 128);
+            this.fridayDateLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.fridayDateLabel.Name = "fridayDateLabel";
-            this.fridayDateLabel.Size = new System.Drawing.Size(35, 24);
+            this.fridayDateLabel.Size = new System.Drawing.Size(45, 29);
             this.fridayDateLabel.TabIndex = 15;
             this.fridayDateLabel.Text = "5th";
             // 
@@ -158,9 +169,10 @@
             // 
             this.saturdayDateLabel.AutoSize = true;
             this.saturdayDateLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.saturdayDateLabel.Location = new System.Drawing.Point(899, 104);
+            this.saturdayDateLabel.Location = new System.Drawing.Point(1199, 128);
+            this.saturdayDateLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.saturdayDateLabel.Name = "saturdayDateLabel";
-            this.saturdayDateLabel.Size = new System.Drawing.Size(35, 24);
+            this.saturdayDateLabel.Size = new System.Drawing.Size(45, 29);
             this.saturdayDateLabel.TabIndex = 16;
             this.saturdayDateLabel.Text = "6th";
             // 
@@ -168,9 +180,10 @@
             // 
             this.sundayDateLabel.AutoSize = true;
             this.sundayDateLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sundayDateLabel.Location = new System.Drawing.Point(1037, 104);
+            this.sundayDateLabel.Location = new System.Drawing.Point(1383, 128);
+            this.sundayDateLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.sundayDateLabel.Name = "sundayDateLabel";
-            this.sundayDateLabel.Size = new System.Drawing.Size(35, 24);
+            this.sundayDateLabel.Size = new System.Drawing.Size(45, 29);
             this.sundayDateLabel.TabIndex = 17;
             this.sundayDateLabel.Text = "7th";
             // 
@@ -178,9 +191,10 @@
             // 
             this.am12Label.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.am12Label.AutoSize = true;
-            this.am12Label.Location = new System.Drawing.Point(6, 599);
+            this.am12Label.Location = new System.Drawing.Point(10, 737);
+            this.am12Label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.am12Label.Name = "am12Label";
-            this.am12Label.Size = new System.Drawing.Size(33, 13);
+            this.am12Label.Size = new System.Drawing.Size(43, 17);
             this.am12Label.TabIndex = 33;
             this.am12Label.Text = "12am";
             this.am12Label.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -189,9 +203,10 @@
             // 
             this.pm11Label.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pm11Label.AutoSize = true;
-            this.pm11Label.Location = new System.Drawing.Point(6, 573);
+            this.pm11Label.Location = new System.Drawing.Point(10, 705);
+            this.pm11Label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.pm11Label.Name = "pm11Label";
-            this.pm11Label.Size = new System.Drawing.Size(33, 13);
+            this.pm11Label.Size = new System.Drawing.Size(43, 17);
             this.pm11Label.TabIndex = 32;
             this.pm11Label.Text = "11pm";
             this.pm11Label.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -200,9 +215,10 @@
             // 
             this.pm10Label.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pm10Label.AutoSize = true;
-            this.pm10Label.Location = new System.Drawing.Point(6, 547);
+            this.pm10Label.Location = new System.Drawing.Point(10, 673);
+            this.pm10Label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.pm10Label.Name = "pm10Label";
-            this.pm10Label.Size = new System.Drawing.Size(33, 13);
+            this.pm10Label.Size = new System.Drawing.Size(43, 17);
             this.pm10Label.TabIndex = 31;
             this.pm10Label.Text = "10pm";
             this.pm10Label.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -211,9 +227,10 @@
             // 
             this.pm9Label.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pm9Label.AutoSize = true;
-            this.pm9Label.Location = new System.Drawing.Point(12, 521);
+            this.pm9Label.Location = new System.Drawing.Point(18, 641);
+            this.pm9Label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.pm9Label.Name = "pm9Label";
-            this.pm9Label.Size = new System.Drawing.Size(27, 13);
+            this.pm9Label.Size = new System.Drawing.Size(35, 17);
             this.pm9Label.TabIndex = 30;
             this.pm9Label.Text = "9pm";
             this.pm9Label.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -222,9 +239,10 @@
             // 
             this.pm8Label.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pm8Label.AutoSize = true;
-            this.pm8Label.Location = new System.Drawing.Point(12, 495);
+            this.pm8Label.Location = new System.Drawing.Point(18, 609);
+            this.pm8Label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.pm8Label.Name = "pm8Label";
-            this.pm8Label.Size = new System.Drawing.Size(27, 13);
+            this.pm8Label.Size = new System.Drawing.Size(35, 17);
             this.pm8Label.TabIndex = 29;
             this.pm8Label.Text = "8pm";
             this.pm8Label.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -233,9 +251,10 @@
             // 
             this.pm7Label.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pm7Label.AutoSize = true;
-            this.pm7Label.Location = new System.Drawing.Point(12, 469);
+            this.pm7Label.Location = new System.Drawing.Point(18, 577);
+            this.pm7Label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.pm7Label.Name = "pm7Label";
-            this.pm7Label.Size = new System.Drawing.Size(27, 13);
+            this.pm7Label.Size = new System.Drawing.Size(35, 17);
             this.pm7Label.TabIndex = 28;
             this.pm7Label.Text = "7pm";
             this.pm7Label.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -244,9 +263,10 @@
             // 
             this.pm6Label.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pm6Label.AutoSize = true;
-            this.pm6Label.Location = new System.Drawing.Point(12, 443);
+            this.pm6Label.Location = new System.Drawing.Point(18, 545);
+            this.pm6Label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.pm6Label.Name = "pm6Label";
-            this.pm6Label.Size = new System.Drawing.Size(27, 13);
+            this.pm6Label.Size = new System.Drawing.Size(35, 17);
             this.pm6Label.TabIndex = 27;
             this.pm6Label.Text = "6pm";
             this.pm6Label.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -255,9 +275,10 @@
             // 
             this.pm5Label.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pm5Label.AutoSize = true;
-            this.pm5Label.Location = new System.Drawing.Point(12, 417);
+            this.pm5Label.Location = new System.Drawing.Point(18, 513);
+            this.pm5Label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.pm5Label.Name = "pm5Label";
-            this.pm5Label.Size = new System.Drawing.Size(27, 13);
+            this.pm5Label.Size = new System.Drawing.Size(35, 17);
             this.pm5Label.TabIndex = 26;
             this.pm5Label.Text = "5pm";
             this.pm5Label.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -266,9 +287,10 @@
             // 
             this.pm4Label.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pm4Label.AutoSize = true;
-            this.pm4Label.Location = new System.Drawing.Point(12, 391);
+            this.pm4Label.Location = new System.Drawing.Point(18, 481);
+            this.pm4Label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.pm4Label.Name = "pm4Label";
-            this.pm4Label.Size = new System.Drawing.Size(27, 13);
+            this.pm4Label.Size = new System.Drawing.Size(35, 17);
             this.pm4Label.TabIndex = 25;
             this.pm4Label.Text = "4pm";
             this.pm4Label.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -277,9 +299,10 @@
             // 
             this.pm3Label.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pm3Label.AutoSize = true;
-            this.pm3Label.Location = new System.Drawing.Point(12, 365);
+            this.pm3Label.Location = new System.Drawing.Point(18, 449);
+            this.pm3Label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.pm3Label.Name = "pm3Label";
-            this.pm3Label.Size = new System.Drawing.Size(27, 13);
+            this.pm3Label.Size = new System.Drawing.Size(35, 17);
             this.pm3Label.TabIndex = 24;
             this.pm3Label.Text = "3pm";
             this.pm3Label.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -288,9 +311,10 @@
             // 
             this.pm2Label.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pm2Label.AutoSize = true;
-            this.pm2Label.Location = new System.Drawing.Point(12, 339);
+            this.pm2Label.Location = new System.Drawing.Point(18, 417);
+            this.pm2Label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.pm2Label.Name = "pm2Label";
-            this.pm2Label.Size = new System.Drawing.Size(27, 13);
+            this.pm2Label.Size = new System.Drawing.Size(35, 17);
             this.pm2Label.TabIndex = 23;
             this.pm2Label.Text = "2pm";
             this.pm2Label.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -299,9 +323,10 @@
             // 
             this.pm1Label.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pm1Label.AutoSize = true;
-            this.pm1Label.Location = new System.Drawing.Point(12, 313);
+            this.pm1Label.Location = new System.Drawing.Point(18, 385);
+            this.pm1Label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.pm1Label.Name = "pm1Label";
-            this.pm1Label.Size = new System.Drawing.Size(27, 13);
+            this.pm1Label.Size = new System.Drawing.Size(35, 17);
             this.pm1Label.TabIndex = 22;
             this.pm1Label.Text = "1pm";
             this.pm1Label.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -310,9 +335,10 @@
             // 
             this.pm12Label.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pm12Label.AutoSize = true;
-            this.pm12Label.Location = new System.Drawing.Point(6, 287);
+            this.pm12Label.Location = new System.Drawing.Point(10, 353);
+            this.pm12Label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.pm12Label.Name = "pm12Label";
-            this.pm12Label.Size = new System.Drawing.Size(33, 13);
+            this.pm12Label.Size = new System.Drawing.Size(43, 17);
             this.pm12Label.TabIndex = 21;
             this.pm12Label.Text = "12pm";
             this.pm12Label.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -321,9 +347,10 @@
             // 
             this.am11Label.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.am11Label.AutoSize = true;
-            this.am11Label.Location = new System.Drawing.Point(6, 261);
+            this.am11Label.Location = new System.Drawing.Point(10, 321);
+            this.am11Label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.am11Label.Name = "am11Label";
-            this.am11Label.Size = new System.Drawing.Size(33, 13);
+            this.am11Label.Size = new System.Drawing.Size(43, 17);
             this.am11Label.TabIndex = 20;
             this.am11Label.Text = "11am";
             this.am11Label.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -332,9 +359,10 @@
             // 
             this.am10Label.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.am10Label.AutoSize = true;
-            this.am10Label.Location = new System.Drawing.Point(6, 235);
+            this.am10Label.Location = new System.Drawing.Point(10, 289);
+            this.am10Label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.am10Label.Name = "am10Label";
-            this.am10Label.Size = new System.Drawing.Size(33, 13);
+            this.am10Label.Size = new System.Drawing.Size(43, 17);
             this.am10Label.TabIndex = 19;
             this.am10Label.Text = "10am";
             this.am10Label.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -343,9 +371,10 @@
             // 
             this.am9Label.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.am9Label.AutoSize = true;
-            this.am9Label.Location = new System.Drawing.Point(12, 209);
+            this.am9Label.Location = new System.Drawing.Point(18, 257);
+            this.am9Label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.am9Label.Name = "am9Label";
-            this.am9Label.Size = new System.Drawing.Size(27, 13);
+            this.am9Label.Size = new System.Drawing.Size(35, 17);
             this.am9Label.TabIndex = 18;
             this.am9Label.Text = "9am";
             this.am9Label.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -354,9 +383,10 @@
             // 
             this.am8Label.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.am8Label.AutoSize = true;
-            this.am8Label.Location = new System.Drawing.Point(12, 183);
+            this.am8Label.Location = new System.Drawing.Point(18, 225);
+            this.am8Label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.am8Label.Name = "am8Label";
-            this.am8Label.Size = new System.Drawing.Size(27, 13);
+            this.am8Label.Size = new System.Drawing.Size(35, 17);
             this.am8Label.TabIndex = 17;
             this.am8Label.Text = "8am";
             this.am8Label.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -365,9 +395,10 @@
             // 
             this.am7Label.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.am7Label.AutoSize = true;
-            this.am7Label.Location = new System.Drawing.Point(12, 157);
+            this.am7Label.Location = new System.Drawing.Point(18, 193);
+            this.am7Label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.am7Label.Name = "am7Label";
-            this.am7Label.Size = new System.Drawing.Size(27, 13);
+            this.am7Label.Size = new System.Drawing.Size(35, 17);
             this.am7Label.TabIndex = 16;
             this.am7Label.Text = "7am";
             this.am7Label.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -376,9 +407,10 @@
             // 
             this.am6Label.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.am6Label.AutoSize = true;
-            this.am6Label.Location = new System.Drawing.Point(12, 131);
+            this.am6Label.Location = new System.Drawing.Point(18, 161);
+            this.am6Label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.am6Label.Name = "am6Label";
-            this.am6Label.Size = new System.Drawing.Size(27, 13);
+            this.am6Label.Size = new System.Drawing.Size(35, 17);
             this.am6Label.TabIndex = 15;
             this.am6Label.Text = "6am";
             this.am6Label.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -387,9 +419,10 @@
             // 
             this.am5Label.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.am5Label.AutoSize = true;
-            this.am5Label.Location = new System.Drawing.Point(12, 105);
+            this.am5Label.Location = new System.Drawing.Point(18, 129);
+            this.am5Label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.am5Label.Name = "am5Label";
-            this.am5Label.Size = new System.Drawing.Size(27, 13);
+            this.am5Label.Size = new System.Drawing.Size(35, 17);
             this.am5Label.TabIndex = 14;
             this.am5Label.Text = "5am";
             this.am5Label.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -398,9 +431,10 @@
             // 
             this.am4Label.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.am4Label.AutoSize = true;
-            this.am4Label.Location = new System.Drawing.Point(12, 79);
+            this.am4Label.Location = new System.Drawing.Point(18, 97);
+            this.am4Label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.am4Label.Name = "am4Label";
-            this.am4Label.Size = new System.Drawing.Size(27, 13);
+            this.am4Label.Size = new System.Drawing.Size(35, 17);
             this.am4Label.TabIndex = 13;
             this.am4Label.Text = "4am";
             this.am4Label.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -409,9 +443,10 @@
             // 
             this.am3Label.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.am3Label.AutoSize = true;
-            this.am3Label.Location = new System.Drawing.Point(12, 53);
+            this.am3Label.Location = new System.Drawing.Point(18, 65);
+            this.am3Label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.am3Label.Name = "am3Label";
-            this.am3Label.Size = new System.Drawing.Size(27, 13);
+            this.am3Label.Size = new System.Drawing.Size(35, 17);
             this.am3Label.TabIndex = 12;
             this.am3Label.Text = "3am";
             this.am3Label.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -420,9 +455,10 @@
             // 
             this.am2Label.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.am2Label.AutoSize = true;
-            this.am2Label.Location = new System.Drawing.Point(12, 27);
+            this.am2Label.Location = new System.Drawing.Point(18, 33);
+            this.am2Label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.am2Label.Name = "am2Label";
-            this.am2Label.Size = new System.Drawing.Size(27, 13);
+            this.am2Label.Size = new System.Drawing.Size(35, 17);
             this.am2Label.TabIndex = 11;
             this.am2Label.Text = "2am";
             this.am2Label.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -431,9 +467,10 @@
             // 
             this.am1Label.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.am1Label.AutoSize = true;
-            this.am1Label.Location = new System.Drawing.Point(12, 1);
+            this.am1Label.Location = new System.Drawing.Point(18, 1);
+            this.am1Label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.am1Label.Name = "am1Label";
-            this.am1Label.Size = new System.Drawing.Size(27, 13);
+            this.am1Label.Size = new System.Drawing.Size(35, 17);
             this.am1Label.TabIndex = 10;
             this.am1Label.Text = "1am";
             this.am1Label.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -476,35 +513,36 @@
             this.calendarTable.Controls.Add(this.pm11Label, 0, 22);
             this.calendarTable.Controls.Add(this.am12Label, 0, 23);
             this.calendarTable.GrowStyle = System.Windows.Forms.TableLayoutPanelGrowStyle.FixedSize;
-            this.calendarTable.Location = new System.Drawing.Point(126, 131);
+            this.calendarTable.Location = new System.Drawing.Point(168, 161);
+            this.calendarTable.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.calendarTable.Name = "calendarTable";
             this.calendarTable.RowCount = 24;
+            this.calendarTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
+            this.calendarTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
+            this.calendarTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
+            this.calendarTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
+            this.calendarTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
+            this.calendarTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
+            this.calendarTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
+            this.calendarTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
+            this.calendarTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
+            this.calendarTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
+            this.calendarTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
+            this.calendarTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
+            this.calendarTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
+            this.calendarTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
+            this.calendarTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
+            this.calendarTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
+            this.calendarTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
+            this.calendarTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
+            this.calendarTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
+            this.calendarTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
+            this.calendarTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
+            this.calendarTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
+            this.calendarTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
             this.calendarTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
             this.calendarTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
-            this.calendarTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
-            this.calendarTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
-            this.calendarTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
-            this.calendarTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
-            this.calendarTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
-            this.calendarTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
-            this.calendarTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
-            this.calendarTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
-            this.calendarTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
-            this.calendarTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
-            this.calendarTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
-            this.calendarTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
-            this.calendarTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
-            this.calendarTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
-            this.calendarTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
-            this.calendarTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
-            this.calendarTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
-            this.calendarTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
-            this.calendarTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
-            this.calendarTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
-            this.calendarTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
-            this.calendarTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.calendarTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.calendarTable.Size = new System.Drawing.Size(1015, 533);
+            this.calendarTable.Size = new System.Drawing.Size(1353, 656);
             this.calendarTable.TabIndex = 2;
             // 
             // mondayLabel
@@ -513,9 +551,10 @@
             this.mondayLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.mondayLabel.AutoSize = true;
             this.mondayLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mondayLabel.Location = new System.Drawing.Point(194, 80);
+            this.mondayLabel.Location = new System.Drawing.Point(259, 98);
+            this.mondayLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.mondayLabel.Name = "mondayLabel";
-            this.mondayLabel.Size = new System.Drawing.Size(84, 24);
+            this.mondayLabel.Size = new System.Drawing.Size(104, 29);
             this.mondayLabel.TabIndex = 34;
             this.mondayLabel.Text = "Monday";
             this.mondayLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -526,9 +565,10 @@
             this.tuesdayLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tuesdayLabel.AutoSize = true;
             this.tuesdayLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tuesdayLabel.Location = new System.Drawing.Point(327, 80);
+            this.tuesdayLabel.Location = new System.Drawing.Point(436, 98);
+            this.tuesdayLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.tuesdayLabel.Name = "tuesdayLabel";
-            this.tuesdayLabel.Size = new System.Drawing.Size(90, 24);
+            this.tuesdayLabel.Size = new System.Drawing.Size(113, 29);
             this.tuesdayLabel.TabIndex = 34;
             this.tuesdayLabel.Text = "Tuesday";
             this.tuesdayLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -539,9 +579,10 @@
             this.wednesdayLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.wednesdayLabel.AutoSize = true;
             this.wednesdayLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.wednesdayLabel.Location = new System.Drawing.Point(448, 80);
+            this.wednesdayLabel.Location = new System.Drawing.Point(597, 98);
+            this.wednesdayLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.wednesdayLabel.Name = "wednesdayLabel";
-            this.wednesdayLabel.Size = new System.Drawing.Size(120, 24);
+            this.wednesdayLabel.Size = new System.Drawing.Size(149, 29);
             this.wednesdayLabel.TabIndex = 34;
             this.wednesdayLabel.Text = "Wednesday";
             this.wednesdayLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -552,9 +593,10 @@
             this.thursdayLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.thursdayLabel.AutoSize = true;
             this.thursdayLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.thursdayLabel.Location = new System.Drawing.Point(596, 80);
+            this.thursdayLabel.Location = new System.Drawing.Point(795, 98);
+            this.thursdayLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.thursdayLabel.Name = "thursdayLabel";
-            this.thursdayLabel.Size = new System.Drawing.Size(97, 24);
+            this.thursdayLabel.Size = new System.Drawing.Size(121, 29);
             this.thursdayLabel.TabIndex = 34;
             this.thursdayLabel.Text = "Thursday";
             this.thursdayLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -565,9 +607,10 @@
             this.fridayLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.fridayLabel.AutoSize = true;
             this.fridayLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.fridayLabel.Location = new System.Drawing.Point(746, 80);
+            this.fridayLabel.Location = new System.Drawing.Point(995, 98);
+            this.fridayLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.fridayLabel.Name = "fridayLabel";
-            this.fridayLabel.Size = new System.Drawing.Size(68, 24);
+            this.fridayLabel.Size = new System.Drawing.Size(86, 29);
             this.fridayLabel.TabIndex = 34;
             this.fridayLabel.Text = "Friday";
             this.fridayLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -578,9 +621,10 @@
             this.sundayLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.sundayLabel.AutoSize = true;
             this.sundayLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sundayLabel.Location = new System.Drawing.Point(1014, 80);
+            this.sundayLabel.Location = new System.Drawing.Point(1352, 98);
+            this.sundayLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.sundayLabel.Name = "sundayLabel";
-            this.sundayLabel.Size = new System.Drawing.Size(80, 24);
+            this.sundayLabel.Size = new System.Drawing.Size(99, 29);
             this.sundayLabel.TabIndex = 34;
             this.sundayLabel.Text = "Sunday";
             this.sundayLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -591,16 +635,21 @@
             this.saturdayLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.saturdayLabel.AutoSize = true;
             this.saturdayLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.saturdayLabel.Location = new System.Drawing.Point(871, 80);
+            this.saturdayLabel.Location = new System.Drawing.Point(1161, 98);
+            this.saturdayLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.saturdayLabel.Name = "saturdayLabel";
-            this.saturdayLabel.Size = new System.Drawing.Size(91, 24);
+            this.saturdayLabel.Size = new System.Drawing.Size(115, 29);
             this.saturdayLabel.TabIndex = 34;
             this.saturdayLabel.Text = "Saturday";
             this.saturdayLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // eventBindingSource
+            // 
+            this.eventBindingSource.DataSource = typeof(TheTabulator.Event);
+            // 
             // Calendar
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.saturdayLabel);
             this.Controls.Add(this.sundayLabel);
@@ -620,11 +669,13 @@
             this.Controls.Add(this.monthLabel);
             this.Controls.Add(this.calendarFeatureLabel);
             this.Controls.Add(this.mondayDateLabel);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Calendar";
-            this.Size = new System.Drawing.Size(1231, 701);
+            this.Size = new System.Drawing.Size(1641, 863);
             this.Load += new System.EventHandler(this.Calendar_Load);
             this.calendarTable.ResumeLayout(false);
             this.calendarTable.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.eventBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -674,5 +725,6 @@
         private System.Windows.Forms.Label fridayLabel;
         private System.Windows.Forms.Label sundayLabel;
         private System.Windows.Forms.Label saturdayLabel;
+        private System.Windows.Forms.BindingSource eventBindingSource;
     }
 }
