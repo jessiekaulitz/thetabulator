@@ -16,10 +16,14 @@ namespace TheTabulator
         private string _location;
         private Label _eventLabel;
 
-        public CalendarEvent(string name)
+        public CalendarEvent(string name, DateTime startTime, DateTime endTime)
         {
             _name = name;
+            _startTime = startTime;
+            _endTime = endTime;
             _eventLabel = new Label();
+            _eventLabel.Dock = DockStyle.Fill;
+            _eventLabel.Text = "This is an event";
         }
 
         public void SaveEvent(StreamWriter streamWriter)
@@ -38,13 +42,20 @@ namespace TheTabulator
 
         public void CalculateStartPosition(out int columnIndex, out int startRowIndex)
         {
-            columnIndex = default;
-            startRowIndex = default;
+            columnIndex = ExtensionMethods.DayIndexWithRollOver(_startTime.DayOfWeek);
+
+            //If the DayOfWeek enumerated type is the 0th value, then set to 
+            //be the 7th index to accomodate for the first column of the table being
+            //for the time labels.
+            //if (columnIndex < 0) columnIndex = 6;
+
+            //Table row index matches the hour (in 24 hr time) integer
+            startRowIndex = _startTime.Hour;
         }
 
         public int CalculateEndRowPosition()
         {
-            return default;
+            return _endTime.Hour;
         }
 
         public string Name
@@ -71,6 +82,14 @@ namespace TheTabulator
             set
             {
                 _location = value;
+            }
+        }
+
+        public Label Label
+        {
+            get
+            {
+                return _eventLabel;
             }
         }
 

@@ -10,7 +10,7 @@ namespace TheTabulator
     {
         private CalendarEvent _nextEvent;
 
-        public RecurringEvent(string name) : base (name)
+        public RecurringEvent(string name, DateTime startTime, DateTime endTime) : base (name, startTime, endTime)
         {
 
         }
