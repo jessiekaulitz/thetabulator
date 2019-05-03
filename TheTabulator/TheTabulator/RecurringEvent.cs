@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace TheTabulator
 {
-    class RecurringEvent: Event
+    class RecurringEvent: CalendarEvent
     {
-        private Event _nextEvent;
+        private CalendarEvent _nextEvent;
 
         public RecurringEvent(string name) : base (name)
         {

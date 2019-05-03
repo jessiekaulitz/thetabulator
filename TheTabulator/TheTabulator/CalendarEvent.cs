@@ -4,32 +4,47 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.IO;
+using System.Windows.Forms;
 
 namespace TheTabulator
 {
-    public class Event
+    public class CalendarEvent
     {
         private DateTime _startTime;
         private DateTime _endTime;
-        private int _color;
         private string _name;
         private string _location;
+        private Label _eventLabel;
 
-        public Event(string name)
+        public CalendarEvent(string name)
         {
             _name = name;
+            _eventLabel = new Label();
         }
 
         public void SaveEvent(StreamWriter streamWriter)
         {
             DateTime cake = new DateTime();
 
-            cake.DayOfWeek;
+            //cake.TimeOfDay
+
+            //cake.DayOfWeek;
         }
 
         public void LoadEvent(StreamReader streamReader)
         {
 
+        }
+
+        public void CalculateStartPosition(out int columnIndex, out int startRowIndex)
+        {
+            columnIndex = default;
+            startRowIndex = default;
+        }
+
+        public int CalculateEndRowPosition()
+        {
+            return default;
         }
 
         public string Name
@@ -59,16 +74,16 @@ namespace TheTabulator
             }
         }
 
-        public int Color
+        public System.Drawing.Color Color
         {
             get
             {
-                return _color;
+                return _eventLabel.BackColor;
             }
 
             set
             {
-                _color = value;
+                _eventLabel.BackColor = value;
             }
         }
 

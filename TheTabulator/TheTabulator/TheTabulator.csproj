@@ -53,7 +53,8 @@
     <Compile Include="Calendar.Designer.cs">
       <DependentUpon>Calendar.cs</DependentUpon>
     </Compile>
-    <Compile Include="Event.cs" />
+    <Compile Include="CalendarController.cs" />
+    <Compile Include="CalendarEvent.cs" />
     <Compile Include="MainWindow.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -65,14 +66,15 @@
     <Compile Include="RecurringEvent.cs" />
     <EmbeddedResource Include="Calendar.resx">
       <DependentUpon>Calendar.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx" />
     <EmbeddedResource Include="MainWindow.resx">
       <DependentUpon>MainWindow.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="obj\Debug\TheTabulator.Form1.resources" />
+    <EmbeddedResource Include="obj\Debug\TheTabulator.Calendar.resources" />
+    <EmbeddedResource Include="obj\Debug\TheTabulator.MainWindow.resources" />
     <EmbeddedResource Include="obj\Debug\TheTabulator.Properties.Resources.resources" />
-    <EmbeddedResource Include="obj\Debug\TheTabulator.To_DoList.resources" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -83,13 +85,13 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="ToDoList.resx" />
     <None Include="bin\Debug\TheTabulator.exe.config" />
     <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
     <None Include="obj\Debug\TheTabulator.csproj.CoreCompileInputs.cache" />
     <None Include="obj\Debug\TheTabulator.csproj.GenerateResource.cache" />
     <None Include="obj\Debug\TheTabulator.csprojAssemblyReference.cache" />
     <None Include="obj\Release\TheTabulator.csproj.CoreCompileInputs.cache" />
+    <None Include="Properties\DataSources\Event.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

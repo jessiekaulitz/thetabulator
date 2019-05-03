@@ -191,7 +191,7 @@
             // 
             this.am12Label.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.am12Label.AutoSize = true;
-            this.am12Label.Location = new System.Drawing.Point(10, 737);
+            this.am12Label.Location = new System.Drawing.Point(10, 1);
             this.am12Label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.am12Label.Name = "am12Label";
             this.am12Label.Size = new System.Drawing.Size(43, 17);
@@ -203,7 +203,7 @@
             // 
             this.pm11Label.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pm11Label.AutoSize = true;
-            this.pm11Label.Location = new System.Drawing.Point(10, 705);
+            this.pm11Label.Location = new System.Drawing.Point(10, 737);
             this.pm11Label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.pm11Label.Name = "pm11Label";
             this.pm11Label.Size = new System.Drawing.Size(43, 17);
@@ -215,7 +215,7 @@
             // 
             this.pm10Label.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pm10Label.AutoSize = true;
-            this.pm10Label.Location = new System.Drawing.Point(10, 673);
+            this.pm10Label.Location = new System.Drawing.Point(10, 705);
             this.pm10Label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.pm10Label.Name = "pm10Label";
             this.pm10Label.Size = new System.Drawing.Size(43, 17);
@@ -227,7 +227,7 @@
             // 
             this.pm9Label.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pm9Label.AutoSize = true;
-            this.pm9Label.Location = new System.Drawing.Point(18, 641);
+            this.pm9Label.Location = new System.Drawing.Point(18, 673);
             this.pm9Label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.pm9Label.Name = "pm9Label";
             this.pm9Label.Size = new System.Drawing.Size(35, 17);
@@ -239,7 +239,7 @@
             // 
             this.pm8Label.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pm8Label.AutoSize = true;
-            this.pm8Label.Location = new System.Drawing.Point(18, 609);
+            this.pm8Label.Location = new System.Drawing.Point(18, 641);
             this.pm8Label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.pm8Label.Name = "pm8Label";
             this.pm8Label.Size = new System.Drawing.Size(35, 17);
@@ -251,7 +251,7 @@
             // 
             this.pm7Label.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pm7Label.AutoSize = true;
-            this.pm7Label.Location = new System.Drawing.Point(18, 577);
+            this.pm7Label.Location = new System.Drawing.Point(18, 609);
             this.pm7Label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.pm7Label.Name = "pm7Label";
             this.pm7Label.Size = new System.Drawing.Size(35, 17);
@@ -263,7 +263,7 @@
             // 
             this.pm6Label.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pm6Label.AutoSize = true;
-            this.pm6Label.Location = new System.Drawing.Point(18, 545);
+            this.pm6Label.Location = new System.Drawing.Point(18, 577);
             this.pm6Label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.pm6Label.Name = "pm6Label";
             this.pm6Label.Size = new System.Drawing.Size(35, 17);
@@ -275,7 +275,7 @@
             // 
             this.pm5Label.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pm5Label.AutoSize = true;
-            this.pm5Label.Location = new System.Drawing.Point(18, 513);
+            this.pm5Label.Location = new System.Drawing.Point(18, 545);
             this.pm5Label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.pm5Label.Name = "pm5Label";
             this.pm5Label.Size = new System.Drawing.Size(35, 17);
@@ -287,7 +287,7 @@
             // 
             this.pm4Label.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pm4Label.AutoSize = true;
-            this.pm4Label.Location = new System.Drawing.Point(18, 481);
+            this.pm4Label.Location = new System.Drawing.Point(18, 513);
             this.pm4Label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.pm4Label.Name = "pm4Label";
             this.pm4Label.Size = new System.Drawing.Size(35, 17);
@@ -299,7 +299,7 @@
             // 
             this.pm3Label.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pm3Label.AutoSize = true;
-            this.pm3Label.Location = new System.Drawing.Point(18, 449);
+            this.pm3Label.Location = new System.Drawing.Point(18, 481);
             this.pm3Label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.pm3Label.Name = "pm3Label";
             this.pm3Label.Size = new System.Drawing.Size(35, 17);
@@ -311,7 +311,7 @@
             // 
             this.pm2Label.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pm2Label.AutoSize = true;
-            this.pm2Label.Location = new System.Drawing.Point(18, 417);
+            this.pm2Label.Location = new System.Drawing.Point(18, 449);
             this.pm2Label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.pm2Label.Name = "pm2Label";
             this.pm2Label.Size = new System.Drawing.Size(35, 17);
@@ -323,7 +323,7 @@
             // 
             this.pm1Label.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pm1Label.AutoSize = true;
-            this.pm1Label.Location = new System.Drawing.Point(18, 385);
+            this.pm1Label.Location = new System.Drawing.Point(18, 417);
             this.pm1Label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.pm1Label.Name = "pm1Label";
             this.pm1Label.Size = new System.Drawing.Size(35, 17);
@@ -335,7 +335,7 @@
             // 
             this.pm12Label.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pm12Label.AutoSize = true;
-            this.pm12Label.Location = new System.Drawing.Point(10, 353);
+            this.pm12Label.Location = new System.Drawing.Point(10, 385);
             this.pm12Label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.pm12Label.Name = "pm12Label";
             this.pm12Label.Size = new System.Drawing.Size(43, 17);
@@ -347,7 +347,7 @@
             // 
             this.am11Label.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.am11Label.AutoSize = true;
-            this.am11Label.Location = new System.Drawing.Point(10, 321);
+            this.am11Label.Location = new System.Drawing.Point(10, 353);
             this.am11Label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.am11Label.Name = "am11Label";
             this.am11Label.Size = new System.Drawing.Size(43, 17);
@@ -359,7 +359,7 @@
             // 
             this.am10Label.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.am10Label.AutoSize = true;
-            this.am10Label.Location = new System.Drawing.Point(10, 289);
+            this.am10Label.Location = new System.Drawing.Point(10, 321);
             this.am10Label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.am10Label.Name = "am10Label";
             this.am10Label.Size = new System.Drawing.Size(43, 17);
@@ -371,7 +371,7 @@
             // 
             this.am9Label.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.am9Label.AutoSize = true;
-            this.am9Label.Location = new System.Drawing.Point(18, 257);
+            this.am9Label.Location = new System.Drawing.Point(18, 289);
             this.am9Label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.am9Label.Name = "am9Label";
             this.am9Label.Size = new System.Drawing.Size(35, 17);
@@ -383,7 +383,7 @@
             // 
             this.am8Label.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.am8Label.AutoSize = true;
-            this.am8Label.Location = new System.Drawing.Point(18, 225);
+            this.am8Label.Location = new System.Drawing.Point(18, 257);
             this.am8Label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.am8Label.Name = "am8Label";
             this.am8Label.Size = new System.Drawing.Size(35, 17);
@@ -395,7 +395,7 @@
             // 
             this.am7Label.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.am7Label.AutoSize = true;
-            this.am7Label.Location = new System.Drawing.Point(18, 193);
+            this.am7Label.Location = new System.Drawing.Point(18, 225);
             this.am7Label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.am7Label.Name = "am7Label";
             this.am7Label.Size = new System.Drawing.Size(35, 17);
@@ -407,7 +407,7 @@
             // 
             this.am6Label.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.am6Label.AutoSize = true;
-            this.am6Label.Location = new System.Drawing.Point(18, 161);
+            this.am6Label.Location = new System.Drawing.Point(18, 193);
             this.am6Label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.am6Label.Name = "am6Label";
             this.am6Label.Size = new System.Drawing.Size(35, 17);
@@ -419,7 +419,7 @@
             // 
             this.am5Label.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.am5Label.AutoSize = true;
-            this.am5Label.Location = new System.Drawing.Point(18, 129);
+            this.am5Label.Location = new System.Drawing.Point(18, 161);
             this.am5Label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.am5Label.Name = "am5Label";
             this.am5Label.Size = new System.Drawing.Size(35, 17);
@@ -431,7 +431,7 @@
             // 
             this.am4Label.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.am4Label.AutoSize = true;
-            this.am4Label.Location = new System.Drawing.Point(18, 97);
+            this.am4Label.Location = new System.Drawing.Point(18, 129);
             this.am4Label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.am4Label.Name = "am4Label";
             this.am4Label.Size = new System.Drawing.Size(35, 17);
@@ -443,7 +443,7 @@
             // 
             this.am3Label.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.am3Label.AutoSize = true;
-            this.am3Label.Location = new System.Drawing.Point(18, 65);
+            this.am3Label.Location = new System.Drawing.Point(18, 97);
             this.am3Label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.am3Label.Name = "am3Label";
             this.am3Label.Size = new System.Drawing.Size(35, 17);
@@ -455,7 +455,7 @@
             // 
             this.am2Label.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.am2Label.AutoSize = true;
-            this.am2Label.Location = new System.Drawing.Point(18, 33);
+            this.am2Label.Location = new System.Drawing.Point(18, 65);
             this.am2Label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.am2Label.Name = "am2Label";
             this.am2Label.Size = new System.Drawing.Size(35, 17);
@@ -467,7 +467,7 @@
             // 
             this.am1Label.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.am1Label.AutoSize = true;
-            this.am1Label.Location = new System.Drawing.Point(18, 1);
+            this.am1Label.Location = new System.Drawing.Point(18, 33);
             this.am1Label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.am1Label.Name = "am1Label";
             this.am1Label.Size = new System.Drawing.Size(35, 17);
@@ -480,7 +480,7 @@
             this.calendarTable.AutoScroll = true;
             this.calendarTable.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
             this.calendarTable.ColumnCount = 8;
-            this.calendarTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 4.238224F));
+            this.calendarTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 4.238225F));
             this.calendarTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 13.68025F));
             this.calendarTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 13.68025F));
             this.calendarTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 13.68025F));
@@ -488,33 +488,33 @@
             this.calendarTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 13.68025F));
             this.calendarTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 13.68025F));
             this.calendarTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 13.68025F));
-            this.calendarTable.Controls.Add(this.am1Label, 0, 0);
-            this.calendarTable.Controls.Add(this.am2Label, 0, 1);
-            this.calendarTable.Controls.Add(this.am3Label, 0, 2);
-            this.calendarTable.Controls.Add(this.am4Label, 0, 3);
-            this.calendarTable.Controls.Add(this.am5Label, 0, 4);
-            this.calendarTable.Controls.Add(this.am6Label, 0, 5);
-            this.calendarTable.Controls.Add(this.am7Label, 0, 6);
-            this.calendarTable.Controls.Add(this.am8Label, 0, 7);
-            this.calendarTable.Controls.Add(this.am9Label, 0, 8);
-            this.calendarTable.Controls.Add(this.am10Label, 0, 9);
-            this.calendarTable.Controls.Add(this.am11Label, 0, 10);
-            this.calendarTable.Controls.Add(this.pm12Label, 0, 11);
-            this.calendarTable.Controls.Add(this.pm1Label, 0, 12);
-            this.calendarTable.Controls.Add(this.pm2Label, 0, 13);
-            this.calendarTable.Controls.Add(this.pm3Label, 0, 14);
-            this.calendarTable.Controls.Add(this.pm4Label, 0, 15);
-            this.calendarTable.Controls.Add(this.pm5Label, 0, 16);
-            this.calendarTable.Controls.Add(this.pm6Label, 0, 17);
-            this.calendarTable.Controls.Add(this.pm7Label, 0, 18);
-            this.calendarTable.Controls.Add(this.pm8Label, 0, 19);
-            this.calendarTable.Controls.Add(this.pm9Label, 0, 20);
-            this.calendarTable.Controls.Add(this.pm10Label, 0, 21);
-            this.calendarTable.Controls.Add(this.pm11Label, 0, 22);
-            this.calendarTable.Controls.Add(this.am12Label, 0, 23);
+            this.calendarTable.Controls.Add(this.am1Label, 0, 1);
+            this.calendarTable.Controls.Add(this.am2Label, 0, 2);
+            this.calendarTable.Controls.Add(this.am3Label, 0, 3);
+            this.calendarTable.Controls.Add(this.am4Label, 0, 4);
+            this.calendarTable.Controls.Add(this.am5Label, 0, 5);
+            this.calendarTable.Controls.Add(this.am6Label, 0, 6);
+            this.calendarTable.Controls.Add(this.am7Label, 0, 7);
+            this.calendarTable.Controls.Add(this.am8Label, 0, 8);
+            this.calendarTable.Controls.Add(this.am9Label, 0, 9);
+            this.calendarTable.Controls.Add(this.am10Label, 0, 10);
+            this.calendarTable.Controls.Add(this.am11Label, 0, 11);
+            this.calendarTable.Controls.Add(this.pm12Label, 0, 12);
+            this.calendarTable.Controls.Add(this.pm1Label, 0, 13);
+            this.calendarTable.Controls.Add(this.pm2Label, 0, 14);
+            this.calendarTable.Controls.Add(this.pm3Label, 0, 15);
+            this.calendarTable.Controls.Add(this.pm4Label, 0, 16);
+            this.calendarTable.Controls.Add(this.pm5Label, 0, 17);
+            this.calendarTable.Controls.Add(this.pm6Label, 0, 18);
+            this.calendarTable.Controls.Add(this.am12Label, 0, 0);
+            this.calendarTable.Controls.Add(this.pm7Label, 0, 19);
+            this.calendarTable.Controls.Add(this.pm8Label, 0, 20);
+            this.calendarTable.Controls.Add(this.pm9Label, 0, 21);
+            this.calendarTable.Controls.Add(this.pm10Label, 0, 22);
+            this.calendarTable.Controls.Add(this.pm11Label, 0, 23);
             this.calendarTable.GrowStyle = System.Windows.Forms.TableLayoutPanelGrowStyle.FixedSize;
             this.calendarTable.Location = new System.Drawing.Point(168, 161);
-            this.calendarTable.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.calendarTable.Margin = new System.Windows.Forms.Padding(4);
             this.calendarTable.Name = "calendarTable";
             this.calendarTable.RowCount = 24;
             this.calendarTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
@@ -540,8 +540,7 @@
             this.calendarTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
             this.calendarTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
             this.calendarTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
-            this.calendarTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
-            this.calendarTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
+            this.calendarTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
             this.calendarTable.Size = new System.Drawing.Size(1353, 656);
             this.calendarTable.TabIndex = 2;
             // 
@@ -645,7 +644,7 @@
             // 
             // eventBindingSource
             // 
-            this.eventBindingSource.DataSource = typeof(TheTabulator.Event);
+            this.eventBindingSource.DataSource = typeof(TheTabulator.CalendarEvent);
             // 
             // Calendar
             // 
@@ -669,7 +668,7 @@
             this.Controls.Add(this.monthLabel);
             this.Controls.Add(this.calendarFeatureLabel);
             this.Controls.Add(this.mondayDateLabel);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Calendar";
             this.Size = new System.Drawing.Size(1641, 863);
             this.Load += new System.EventHandler(this.Calendar_Load);
