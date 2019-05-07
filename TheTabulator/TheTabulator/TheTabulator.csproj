@@ -55,6 +55,7 @@
     </Compile>
     <Compile Include="CalendarController.cs" />
     <Compile Include="CalendarEvent.cs" />
+    <Compile Include="ExtensionMethods.cs" />
     <Compile Include="MainWindow.cs">
       <SubType>Form</SubType>
     </Compile>

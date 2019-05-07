@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.calendarFeatureLabel = new System.Windows.Forms.Label();
             this.monthLabel = new System.Windows.Forms.Label();
             this.yearLabel = new System.Windows.Forms.Label();
             this.mondayDateLabel = new System.Windows.Forms.Label();
@@ -72,30 +71,44 @@
             this.pm10Label = new System.Windows.Forms.Label();
             this.pm11Label = new System.Windows.Forms.Label();
             this.nextWeekButton = new System.Windows.Forms.Button();
-            this.eventBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.previousWeekButton = new System.Windows.Forms.Button();
+            this.eventBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
+            this.label25 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.eventBindingSource)).BeginInit();
             this.SuspendLayout();
-            // 
-            // calendarFeatureLabel
-            // 
-            this.calendarFeatureLabel.AutoSize = true;
-            this.calendarFeatureLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.calendarFeatureLabel.Location = new System.Drawing.Point(892, 21);
-            this.calendarFeatureLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.calendarFeatureLabel.Name = "calendarFeatureLabel";
-            this.calendarFeatureLabel.Size = new System.Drawing.Size(272, 69);
-            this.calendarFeatureLabel.TabIndex = 0;
-            this.calendarFeatureLabel.Text = "Calendar";
             // 
             // monthLabel
             // 
             this.monthLabel.AutoSize = true;
-            this.monthLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.monthLabel.Location = new System.Drawing.Point(369, 50);
+            this.monthLabel.Font = new System.Drawing.Font("Tahoma", 26F);
+            this.monthLabel.Location = new System.Drawing.Point(235, 28);
             this.monthLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.monthLabel.Name = "monthLabel";
-            this.monthLabel.Size = new System.Drawing.Size(111, 31);
+            this.monthLabel.Size = new System.Drawing.Size(175, 53);
             this.monthLabel.TabIndex = 1;
             this.monthLabel.Text = "January";
             this.monthLabel.Click += new System.EventHandler(this.MonthLabel_Click);
@@ -103,90 +116,91 @@
             // yearLabel
             // 
             this.yearLabel.AutoSize = true;
-            this.yearLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.yearLabel.Location = new System.Drawing.Point(481, 50);
+            this.yearLabel.Font = new System.Drawing.Font("Tahoma", 26F);
+            this.yearLabel.Location = new System.Drawing.Point(418, 28);
             this.yearLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.yearLabel.Name = "yearLabel";
-            this.yearLabel.Size = new System.Drawing.Size(74, 31);
+            this.yearLabel.Size = new System.Drawing.Size(119, 53);
             this.yearLabel.TabIndex = 10;
             this.yearLabel.Text = "2019";
             // 
             // mondayDateLabel
             // 
             this.mondayDateLabel.AutoSize = true;
-            this.mondayDateLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mondayDateLabel.Location = new System.Drawing.Point(124, 128);
+            this.mondayDateLabel.Font = new System.Drawing.Font("Tahoma", 14F);
+            this.mondayDateLabel.Location = new System.Drawing.Point(139, 135);
             this.mondayDateLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.mondayDateLabel.Name = "mondayDateLabel";
-            this.mondayDateLabel.Size = new System.Drawing.Size(44, 29);
+            this.mondayDateLabel.Size = new System.Drawing.Size(26, 29);
             this.mondayDateLabel.TabIndex = 11;
-            this.mondayDateLabel.Text = "1st";
+            this.mondayDateLabel.Text = "1";
+            this.mondayDateLabel.Click += new System.EventHandler(this.MondayDateLabel_Click);
             // 
             // tuesdayDateLabel
             // 
             this.tuesdayDateLabel.AutoSize = true;
-            this.tuesdayDateLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tuesdayDateLabel.Location = new System.Drawing.Point(318, 132);
+            this.tuesdayDateLabel.Font = new System.Drawing.Font("Tahoma", 14F);
+            this.tuesdayDateLabel.Location = new System.Drawing.Point(332, 135);
             this.tuesdayDateLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.tuesdayDateLabel.Name = "tuesdayDateLabel";
-            this.tuesdayDateLabel.Size = new System.Drawing.Size(53, 29);
+            this.tuesdayDateLabel.Size = new System.Drawing.Size(26, 29);
             this.tuesdayDateLabel.TabIndex = 12;
-            this.tuesdayDateLabel.Text = "2nd";
+            this.tuesdayDateLabel.Text = "2";
             // 
             // wednesdayDateLabel
             // 
             this.wednesdayDateLabel.AutoSize = true;
-            this.wednesdayDateLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.wednesdayDateLabel.Location = new System.Drawing.Point(507, 126);
+            this.wednesdayDateLabel.Font = new System.Drawing.Font("Tahoma", 14F);
+            this.wednesdayDateLabel.Location = new System.Drawing.Point(525, 135);
             this.wednesdayDateLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.wednesdayDateLabel.Name = "wednesdayDateLabel";
-            this.wednesdayDateLabel.Size = new System.Drawing.Size(48, 29);
+            this.wednesdayDateLabel.Size = new System.Drawing.Size(26, 29);
             this.wednesdayDateLabel.TabIndex = 13;
-            this.wednesdayDateLabel.Text = "3rd";
+            this.wednesdayDateLabel.Text = "3";
             // 
             // thursdayDateLabel
             // 
             this.thursdayDateLabel.AutoSize = true;
-            this.thursdayDateLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.thursdayDateLabel.Location = new System.Drawing.Point(727, 128);
+            this.thursdayDateLabel.Font = new System.Drawing.Font("Tahoma", 14F);
+            this.thursdayDateLabel.Location = new System.Drawing.Point(717, 135);
             this.thursdayDateLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.thursdayDateLabel.Name = "thursdayDateLabel";
-            this.thursdayDateLabel.Size = new System.Drawing.Size(45, 29);
+            this.thursdayDateLabel.Size = new System.Drawing.Size(26, 29);
             this.thursdayDateLabel.TabIndex = 14;
-            this.thursdayDateLabel.Text = "4th";
+            this.thursdayDateLabel.Text = "4";
             // 
             // fridayDateLabel
             // 
             this.fridayDateLabel.AutoSize = true;
-            this.fridayDateLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.fridayDateLabel.Location = new System.Drawing.Point(921, 132);
+            this.fridayDateLabel.Font = new System.Drawing.Font("Tahoma", 14F);
+            this.fridayDateLabel.Location = new System.Drawing.Point(911, 135);
             this.fridayDateLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.fridayDateLabel.Name = "fridayDateLabel";
-            this.fridayDateLabel.Size = new System.Drawing.Size(45, 29);
+            this.fridayDateLabel.Size = new System.Drawing.Size(26, 29);
             this.fridayDateLabel.TabIndex = 15;
-            this.fridayDateLabel.Text = "5th";
+            this.fridayDateLabel.Text = "5";
             // 
             // saturdayDateLabel
             // 
             this.saturdayDateLabel.AutoSize = true;
-            this.saturdayDateLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.saturdayDateLabel.Location = new System.Drawing.Point(1106, 126);
+            this.saturdayDateLabel.Font = new System.Drawing.Font("Tahoma", 14F);
+            this.saturdayDateLabel.Location = new System.Drawing.Point(1103, 135);
             this.saturdayDateLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.saturdayDateLabel.Name = "saturdayDateLabel";
-            this.saturdayDateLabel.Size = new System.Drawing.Size(45, 29);
+            this.saturdayDateLabel.Size = new System.Drawing.Size(26, 29);
             this.saturdayDateLabel.TabIndex = 16;
-            this.saturdayDateLabel.Text = "6th";
+            this.saturdayDateLabel.Text = "6";
             // 
             // sundayDateLabel
             // 
             this.sundayDateLabel.AutoSize = true;
-            this.sundayDateLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sundayDateLabel.Location = new System.Drawing.Point(1300, 128);
+            this.sundayDateLabel.Font = new System.Drawing.Font("Tahoma", 14F);
+            this.sundayDateLabel.Location = new System.Drawing.Point(1298, 135);
             this.sundayDateLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.sundayDateLabel.Name = "sundayDateLabel";
-            this.sundayDateLabel.Size = new System.Drawing.Size(45, 29);
+            this.sundayDateLabel.Size = new System.Drawing.Size(26, 29);
             this.sundayDateLabel.TabIndex = 17;
-            this.sundayDateLabel.Text = "7th";
+            this.sundayDateLabel.Text = "7";
             // 
             // calendarTable
             // 
@@ -201,9 +215,10 @@
             this.calendarTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
             this.calendarTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
             this.calendarTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.calendarTable.Font = new System.Drawing.Font("Tahoma", 10F);
             this.calendarTable.GrowStyle = System.Windows.Forms.TableLayoutPanelGrowStyle.FixedSize;
             this.calendarTable.Location = new System.Drawing.Point(55, 165);
-            this.calendarTable.Margin = new System.Windows.Forms.Padding(4);
+            this.calendarTable.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.calendarTable.Name = "calendarTable";
             this.calendarTable.RowCount = 24;
             this.calendarTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
@@ -230,7 +245,7 @@
             this.calendarTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
             this.calendarTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
             this.calendarTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
-            this.calendarTable.Size = new System.Drawing.Size(1353, 785);
+            this.calendarTable.Size = new System.Drawing.Size(1353, 771);
             this.calendarTable.TabIndex = 2;
             // 
             // mondayLabel
@@ -238,11 +253,11 @@
             this.mondayLabel.AccessibleRole = System.Windows.Forms.AccessibleRole.ColumnHeader;
             this.mondayLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.mondayLabel.AutoSize = true;
-            this.mondayLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mondayLabel.Location = new System.Drawing.Point(57, 81);
+            this.mondayLabel.Font = new System.Drawing.Font("Tahoma", 14F);
+            this.mondayLabel.Location = new System.Drawing.Point(104, 109);
             this.mondayLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.mondayLabel.Name = "mondayLabel";
-            this.mondayLabel.Size = new System.Drawing.Size(104, 29);
+            this.mondayLabel.Size = new System.Drawing.Size(96, 29);
             this.mondayLabel.TabIndex = 34;
             this.mondayLabel.Text = "Monday";
             this.mondayLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -252,11 +267,11 @@
             this.tuesdayLabel.AccessibleRole = System.Windows.Forms.AccessibleRole.ColumnHeader;
             this.tuesdayLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tuesdayLabel.AutoSize = true;
-            this.tuesdayLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tuesdayLabel.Location = new System.Drawing.Point(258, 81);
+            this.tuesdayLabel.Font = new System.Drawing.Font("Tahoma", 14F);
+            this.tuesdayLabel.Location = new System.Drawing.Point(294, 109);
             this.tuesdayLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.tuesdayLabel.Name = "tuesdayLabel";
-            this.tuesdayLabel.Size = new System.Drawing.Size(113, 29);
+            this.tuesdayLabel.Size = new System.Drawing.Size(102, 29);
             this.tuesdayLabel.TabIndex = 34;
             this.tuesdayLabel.Text = "Tuesday";
             this.tuesdayLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -266,11 +281,11 @@
             this.wednesdayLabel.AccessibleRole = System.Windows.Forms.AccessibleRole.ColumnHeader;
             this.wednesdayLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.wednesdayLabel.AutoSize = true;
-            this.wednesdayLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.wednesdayLabel.Location = new System.Drawing.Point(468, 81);
+            this.wednesdayLabel.Font = new System.Drawing.Font("Tahoma", 14F);
+            this.wednesdayLabel.Location = new System.Drawing.Point(470, 109);
             this.wednesdayLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.wednesdayLabel.Name = "wednesdayLabel";
-            this.wednesdayLabel.Size = new System.Drawing.Size(149, 29);
+            this.wednesdayLabel.Size = new System.Drawing.Size(136, 29);
             this.wednesdayLabel.TabIndex = 34;
             this.wednesdayLabel.Text = "Wednesday";
             this.wednesdayLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -280,11 +295,11 @@
             this.thursdayLabel.AccessibleRole = System.Windows.Forms.AccessibleRole.ColumnHeader;
             this.thursdayLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.thursdayLabel.AutoSize = true;
-            this.thursdayLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.thursdayLabel.Location = new System.Drawing.Point(697, 72);
+            this.thursdayLabel.Font = new System.Drawing.Font("Tahoma", 14F);
+            this.thursdayLabel.Location = new System.Drawing.Point(675, 109);
             this.thursdayLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.thursdayLabel.Name = "thursdayLabel";
-            this.thursdayLabel.Size = new System.Drawing.Size(121, 29);
+            this.thursdayLabel.Size = new System.Drawing.Size(111, 29);
             this.thursdayLabel.TabIndex = 34;
             this.thursdayLabel.Text = "Thursday";
             this.thursdayLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -294,11 +309,11 @@
             this.fridayLabel.AccessibleRole = System.Windows.Forms.AccessibleRole.ColumnHeader;
             this.fridayLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.fridayLabel.AutoSize = true;
-            this.fridayLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.fridayLabel.Location = new System.Drawing.Point(860, 72);
+            this.fridayLabel.Font = new System.Drawing.Font("Tahoma", 14F);
+            this.fridayLabel.Location = new System.Drawing.Point(885, 109);
             this.fridayLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.fridayLabel.Name = "fridayLabel";
-            this.fridayLabel.Size = new System.Drawing.Size(86, 29);
+            this.fridayLabel.Size = new System.Drawing.Size(78, 29);
             this.fridayLabel.TabIndex = 34;
             this.fridayLabel.Text = "Friday";
             this.fridayLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -308,11 +323,11 @@
             this.sundayLabel.AccessibleRole = System.Windows.Forms.AccessibleRole.ColumnHeader;
             this.sundayLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.sundayLabel.AutoSize = true;
-            this.sundayLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sundayLabel.Location = new System.Drawing.Point(1235, 61);
+            this.sundayLabel.Font = new System.Drawing.Font("Tahoma", 14F);
+            this.sundayLabel.Location = new System.Drawing.Point(1266, 109);
             this.sundayLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.sundayLabel.Name = "sundayLabel";
-            this.sundayLabel.Size = new System.Drawing.Size(99, 29);
+            this.sundayLabel.Size = new System.Drawing.Size(90, 29);
             this.sundayLabel.TabIndex = 34;
             this.sundayLabel.Text = "Sunday";
             this.sundayLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -322,11 +337,11 @@
             this.saturdayLabel.AccessibleRole = System.Windows.Forms.AccessibleRole.ColumnHeader;
             this.saturdayLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.saturdayLabel.AutoSize = true;
-            this.saturdayLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.saturdayLabel.Location = new System.Drawing.Point(1034, 81);
+            this.saturdayLabel.Font = new System.Drawing.Font("Tahoma", 14F);
+            this.saturdayLabel.Location = new System.Drawing.Point(1063, 109);
             this.saturdayLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.saturdayLabel.Name = "saturdayLabel";
-            this.saturdayLabel.Size = new System.Drawing.Size(115, 29);
+            this.saturdayLabel.Size = new System.Drawing.Size(107, 29);
             this.saturdayLabel.TabIndex = 34;
             this.saturdayLabel.Text = "Saturday";
             this.saturdayLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -621,32 +636,311 @@
             // 
             // nextWeekButton
             // 
-            this.nextWeekButton.Location = new System.Drawing.Point(225, 38);
+            this.nextWeekButton.Font = new System.Drawing.Font("Tahoma", 14F);
+            this.nextWeekButton.Location = new System.Drawing.Point(158, 34);
             this.nextWeekButton.Name = "nextWeekButton";
-            this.nextWeekButton.Size = new System.Drawing.Size(75, 23);
+            this.nextWeekButton.Size = new System.Drawing.Size(70, 40);
             this.nextWeekButton.TabIndex = 48;
             this.nextWeekButton.Text = ">";
             this.nextWeekButton.UseVisualStyleBackColor = true;
             this.nextWeekButton.Click += new System.EventHandler(this.NextWeekButton_Click);
             // 
-            // eventBindingSource
-            // 
-            this.eventBindingSource.DataSource = typeof(TheTabulator.CalendarEvent);
-            // 
             // previousWeekButton
             // 
-            this.previousWeekButton.Location = new System.Drawing.Point(115, 38);
+            this.previousWeekButton.Font = new System.Drawing.Font("Tahoma", 14F);
+            this.previousWeekButton.Location = new System.Drawing.Point(70, 34);
             this.previousWeekButton.Name = "previousWeekButton";
-            this.previousWeekButton.Size = new System.Drawing.Size(75, 23);
+            this.previousWeekButton.Size = new System.Drawing.Size(70, 40);
             this.previousWeekButton.TabIndex = 49;
             this.previousWeekButton.Text = "<";
             this.previousWeekButton.UseVisualStyleBackColor = true;
             this.previousWeekButton.Click += new System.EventHandler(this.PreviousWeekButton_Click);
             // 
+            // eventBindingSource
+            // 
+            this.eventBindingSource.DataSource = typeof(TheTabulator.CalendarEvent);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Tahoma", 8.5F);
+            this.label1.Location = new System.Drawing.Point(3, 157);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(50, 18);
+            this.label1.TabIndex = 50;
+            this.label1.Text = "12 AM";
+            this.label1.Click += new System.EventHandler(this.Label1_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Tahoma", 8.5F);
+            this.label2.Location = new System.Drawing.Point(7, 190);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(42, 18);
+            this.label2.TabIndex = 51;
+            this.label2.Text = "1 AM";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Tahoma", 8.5F);
+            this.label3.Location = new System.Drawing.Point(7, 220);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(42, 18);
+            this.label3.TabIndex = 52;
+            this.label3.Text = "2 AM";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Tahoma", 8.5F);
+            this.label4.Location = new System.Drawing.Point(7, 250);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(42, 18);
+            this.label4.TabIndex = 53;
+            this.label4.Text = "3 AM";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Tahoma", 8.5F);
+            this.label5.Location = new System.Drawing.Point(7, 283);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(42, 18);
+            this.label5.TabIndex = 54;
+            this.label5.Text = "4 AM";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Tahoma", 8.5F);
+            this.label6.Location = new System.Drawing.Point(7, 315);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(42, 18);
+            this.label6.TabIndex = 55;
+            this.label6.Text = "5 AM";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Tahoma", 8.5F);
+            this.label7.Location = new System.Drawing.Point(8, 606);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(41, 18);
+            this.label7.TabIndex = 56;
+            this.label7.Text = "2 PM";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Tahoma", 8.5F);
+            this.label8.Location = new System.Drawing.Point(8, 573);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(41, 18);
+            this.label8.TabIndex = 57;
+            this.label8.Text = "1 PM";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Tahoma", 8.5F);
+            this.label9.Location = new System.Drawing.Point(4, 540);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(49, 18);
+            this.label9.TabIndex = 58;
+            this.label9.Text = "12 PM";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Tahoma", 8.5F);
+            this.label10.Location = new System.Drawing.Point(3, 508);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(50, 18);
+            this.label10.TabIndex = 59;
+            this.label10.Text = "11 AM";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Tahoma", 8.5F);
+            this.label11.Location = new System.Drawing.Point(3, 476);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(50, 18);
+            this.label11.TabIndex = 60;
+            this.label11.Text = "10 AM";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Tahoma", 8.5F);
+            this.label12.Location = new System.Drawing.Point(7, 443);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(42, 18);
+            this.label12.TabIndex = 61;
+            this.label12.Text = "9 AM";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Tahoma", 8.5F);
+            this.label13.Location = new System.Drawing.Point(7, 411);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(42, 18);
+            this.label13.TabIndex = 62;
+            this.label13.Text = "8 AM";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Tahoma", 8.5F);
+            this.label14.Location = new System.Drawing.Point(7, 380);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(42, 18);
+            this.label14.TabIndex = 63;
+            this.label14.Text = "7 AM";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Tahoma", 8.5F);
+            this.label15.Location = new System.Drawing.Point(7, 348);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(42, 18);
+            this.label15.TabIndex = 64;
+            this.label15.Text = "6 AM";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Tahoma", 8.5F);
+            this.label16.Location = new System.Drawing.Point(8, 637);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(41, 18);
+            this.label16.TabIndex = 70;
+            this.label16.Text = "3 PM";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Tahoma", 8.5F);
+            this.label17.Location = new System.Drawing.Point(8, 668);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(41, 18);
+            this.label17.TabIndex = 69;
+            this.label17.Text = "4 PM";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Tahoma", 8.5F);
+            this.label18.Location = new System.Drawing.Point(8, 700);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(41, 18);
+            this.label18.TabIndex = 68;
+            this.label18.Text = "5 PM";
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Tahoma", 8.5F);
+            this.label19.Location = new System.Drawing.Point(8, 731);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(41, 18);
+            this.label19.TabIndex = 67;
+            this.label19.Text = "6 PM";
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Tahoma", 8.5F);
+            this.label20.Location = new System.Drawing.Point(8, 763);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(41, 18);
+            this.label20.TabIndex = 66;
+            this.label20.Text = "7 PM";
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("Tahoma", 8.5F);
+            this.label21.Location = new System.Drawing.Point(8, 795);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(41, 18);
+            this.label21.TabIndex = 65;
+            this.label21.Text = "8 PM";
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("Tahoma", 8.5F);
+            this.label22.Location = new System.Drawing.Point(8, 827);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(41, 18);
+            this.label22.TabIndex = 74;
+            this.label22.Text = "9 PM";
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Font = new System.Drawing.Font("Tahoma", 8.5F);
+            this.label23.Location = new System.Drawing.Point(4, 860);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(49, 18);
+            this.label23.TabIndex = 73;
+            this.label23.Text = "10 PM";
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Font = new System.Drawing.Font("Tahoma", 8.5F);
+            this.label24.Location = new System.Drawing.Point(4, 893);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(49, 18);
+            this.label24.TabIndex = 72;
+            this.label24.Text = "11 PM";
+            this.label24.Click += new System.EventHandler(this.Label24_Click);
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Font = new System.Drawing.Font("Tahoma", 8.5F);
+            this.label25.Location = new System.Drawing.Point(3, 923);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(50, 18);
+            this.label25.TabIndex = 71;
+            this.label25.Text = "12 AM";
+            // 
             // Calendar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.label22);
+            this.Controls.Add(this.label23);
+            this.Controls.Add(this.label24);
+            this.Controls.Add(this.label25);
+            this.Controls.Add(this.label16);
+            this.Controls.Add(this.label17);
+            this.Controls.Add(this.label18);
+            this.Controls.Add(this.label19);
+            this.Controls.Add(this.label20);
+            this.Controls.Add(this.label21);
+            this.Controls.Add(this.label15);
+            this.Controls.Add(this.label14);
+            this.Controls.Add(this.label13);
+            this.Controls.Add(this.label12);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.previousWeekButton);
             this.Controls.Add(this.nextWeekButton);
             this.Controls.Add(this.pm11Label);
@@ -689,11 +983,10 @@
             this.Controls.Add(this.yearLabel);
             this.Controls.Add(this.calendarTable);
             this.Controls.Add(this.monthLabel);
-            this.Controls.Add(this.calendarFeatureLabel);
             this.Controls.Add(this.mondayDateLabel);
-            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Calendar";
-            this.Size = new System.Drawing.Size(1425, 918);
+            this.Size = new System.Drawing.Size(1425, 956);
             this.Load += new System.EventHandler(this.Calendar_Load);
             ((System.ComponentModel.ISupportInitialize)(this.eventBindingSource)).EndInit();
             this.ResumeLayout(false);
@@ -702,8 +995,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Label calendarFeatureLabel;
         private System.Windows.Forms.Label monthLabel;
         private System.Windows.Forms.Label yearLabel;
         private System.Windows.Forms.Label mondayDateLabel;
@@ -748,5 +1039,30 @@
         private System.Windows.Forms.Label pm7Label;
         private System.Windows.Forms.Button nextWeekButton;
         private System.Windows.Forms.Button previousWeekButton;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.Label label25;
     }
 }

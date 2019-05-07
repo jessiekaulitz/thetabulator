@@ -80,5 +80,20 @@ namespace TheTabulator
             UpdateMonthLabel();
             UpdateYearLabel();
         }
+
+        private void MondayDateLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Label24_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
