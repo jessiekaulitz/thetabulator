@@ -40,15 +40,15 @@ namespace TheTabulator
             this.pnlMainToDoList.Controls.Add(this.txtToDoListName);
             this.pnlMainToDoList.Location = new System.Drawing.Point(0, 0);
             this.pnlMainToDoList.Name = "pnlMainToDoList";
-            this.pnlMainToDoList.Size = new System.Drawing.Size(525, 683);
+            this.pnlMainToDoList.Size = new System.Drawing.Size(354, 649);
             this.pnlMainToDoList.TabIndex = 0;
             // 
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Tahoma", 10F);
-            this.button1.Location = new System.Drawing.Point(436, 169);
+            this.button1.Location = new System.Drawing.Point(289, 82);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(84, 70);
+            this.button1.Size = new System.Drawing.Size(61, 47);
             this.button1.TabIndex = 4;
             this.button1.Text = "Add Step";
             this.button1.UseVisualStyleBackColor = true;
@@ -64,9 +64,9 @@ namespace TheTabulator
             this.lstTasks.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.None;
             this.lstTasks.LabelEdit = true;
             this.lstTasks.LabelWrap = false;
-            this.lstTasks.Location = new System.Drawing.Point(4, 123);
+            this.lstTasks.Location = new System.Drawing.Point(3, 82);
             this.lstTasks.Name = "lstTasks";
-            this.lstTasks.Size = new System.Drawing.Size(428, 558);
+            this.lstTasks.Size = new System.Drawing.Size(280, 558);
             this.lstTasks.SmallImageList = this.imageListSmall;
             this.lstTasks.TabIndex = 3;
             this.lstTasks.UseCompatibleStateImageBehavior = false;
@@ -87,9 +87,9 @@ namespace TheTabulator
             // txtTaskDescription
             // 
             this.txtTaskDescription.Font = new System.Drawing.Font("Tahoma", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTaskDescription.Location = new System.Drawing.Point(4, 66);
+            this.txtTaskDescription.Location = new System.Drawing.Point(3, 46);
             this.txtTaskDescription.Name = "txtTaskDescription";
-            this.txtTaskDescription.Size = new System.Drawing.Size(359, 41);
+            this.txtTaskDescription.Size = new System.Drawing.Size(231, 30);
             this.txtTaskDescription.TabIndex = 2;
             this.txtTaskDescription.Text = "Task Description";
             this.txtTaskDescription.Click += new System.EventHandler(this.TxtTaskDescription_Click);
@@ -99,9 +99,9 @@ namespace TheTabulator
             // btnAdd
             // 
             this.btnAdd.Font = new System.Drawing.Font("Tahoma", 14F);
-            this.btnAdd.Location = new System.Drawing.Point(373, 65);
+            this.btnAdd.Location = new System.Drawing.Point(240, 46);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(63, 50);
+            this.btnAdd.Size = new System.Drawing.Size(44, 30);
             this.btnAdd.TabIndex = 1;
             this.btnAdd.Text = "+";
             this.btnAdd.UseVisualStyleBackColor = true;
@@ -112,7 +112,7 @@ namespace TheTabulator
             this.txtToDoListName.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtToDoListName.Location = new System.Drawing.Point(4, 4);
             this.txtToDoListName.Name = "txtToDoListName";
-            this.txtToDoListName.Size = new System.Drawing.Size(428, 51);
+            this.txtToDoListName.Size = new System.Drawing.Size(280, 36);
             this.txtToDoListName.TabIndex = 0;
             this.txtToDoListName.Text = "Untitled";
             this.txtToDoListName.TextChanged += new System.EventHandler(this.TxtToDoListName_TextChanged);
@@ -121,7 +121,7 @@ namespace TheTabulator
             // 
             this.Controls.Add(this.pnlMainToDoList);
             this.Name = "To_DoList";
-            this.Size = new System.Drawing.Size(525, 683);
+            this.Size = new System.Drawing.Size(354, 644);
             this.Load += new System.EventHandler(this.To_DoList_Load);
             this.pnlMainToDoList.ResumeLayout(false);
             this.pnlMainToDoList.PerformLayout();
@@ -213,5 +213,10 @@ namespace TheTabulator
 
         private ImageList imageListSmall;
         private IContainer components;
+
+        public string Title()
+        {
+            return txtToDoListName.Text;
+        }
     }
 }
