@@ -22,6 +22,7 @@ namespace TheTabulator
             //Setting the vertical scroll to start 50% down to show the more relevant times people like
             calendarTable.VerticalScroll.Value = 50;
             CalendarController.DrawWeeksEvents(calendarTable.Controls);
+            UpdateLabels();
             //calendarTable.Controls.Clear
             
             Label label = new Label();
@@ -33,20 +34,14 @@ namespace TheTabulator
 
         }
 
-        private void MonthLabel_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        //Needs to update the calendar labels for date numbers, month (if necessary), and year (if necessary)
         private void UpdateYearLabel()
         {
-            yearLabel.Text = CalendarController.Year;
+            yearLabel.Text = CalendarController.YearString;
         }
 
         private void UpdateMonthLabel()
         {
-            monthLabel.Text = CalendarController.Month;
+            monthLabel.Text = CalendarController.MonthString;
         }
 
         private void NextWeekButton_Click(object sender, EventArgs e)
@@ -58,13 +53,13 @@ namespace TheTabulator
 
         private void UpdateDateLabels()
         {
-            mondayDateLabel.Text = CalendarController.DayDate(DayOfWeek.Monday).ToString();
-            tuesdayDateLabel.Text = CalendarController.DayDate(DayOfWeek.Tuesday).ToString();
-            wednesdayDateLabel.Text = CalendarController.DayDate(DayOfWeek.Wednesday).ToString();
-            thursdayDateLabel.Text = CalendarController.DayDate(DayOfWeek.Thursday).ToString();
-            fridayDateLabel.Text = CalendarController.DayDate(DayOfWeek.Friday).ToString();
-            saturdayDateLabel.Text = CalendarController.DayDate(DayOfWeek.Saturday).ToString();
-            sundayDateLabel.Text = CalendarController.DayDate(DayOfWeek.Sunday).ToString();
+            DayOfWeek dayOfWeek = DayOfWeek.Monday;
+
+            foreach (Label label in dateNumbersPanel.Controls)
+            {
+                label.Text = CalendarController.DayDateString(dayOfWeek).ToString();
+                dayOfWeek++;
+            }
         }
 
         private void PreviousWeekButton_Click(object sender, EventArgs e)
@@ -79,21 +74,6 @@ namespace TheTabulator
             UpdateDateLabels();
             UpdateMonthLabel();
             UpdateYearLabel();
-        }
-
-        private void MondayDateLabel_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Label24_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

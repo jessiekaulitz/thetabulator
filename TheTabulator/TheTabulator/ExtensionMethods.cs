@@ -19,6 +19,9 @@ namespace TheTabulator
         /// <returns></returns>
         public static DateTime WeekStartDate(this DateTime dateTime, DayOfWeek weekStartDay)
         {
+            //Removing any time part of the date (will now be at 12am of the date)
+            dateTime = dateTime.Date;
+
             while (dateTime.DayOfWeek != weekStartDay)
             {
                 //This object's date becomes the day before
@@ -28,14 +31,7 @@ namespace TheTabulator
             return dateTime;
         }
 
-        public static int DayIndexWithRollOver(DayOfWeek day)
-        {
-            int dayNumber = Convert.ToInt32(day) - 1;
 
-            if (dayNumber < 0) dayNumber = 6;
-
-            return dayNumber;
-        }
 
         public static void ClearOptimised(this TableLayoutControlCollection cells)
         {
@@ -43,6 +39,18 @@ namespace TheTabulator
             {
                 cells.Remove(label);
             }
+        }
+
+        /// <summary>
+        /// Returns a string representing the full month name of this date.
+        /// </summary>
+        /// <param name="dateTime"></param>
+        /// <returns>
+        /// Month name as a full string. For example, January.
+        /// </returns>
+        public static string FullMonthString(this DateTime dateTime)
+        {
+            return dateTime.ToString("MMMM");
         }
     }
 }
