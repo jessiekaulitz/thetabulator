@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace TheTabulator
 {
-    public partial class MainWindow : Form
+    public partial class Main : Form
     {
-        public MainWindow()
+        public Main()
         {
             InitializeComponent();
         }

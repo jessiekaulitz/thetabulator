@@ -1,6 +1,6 @@
 ﻿namespace TheTabulator
 {
-    partial class MainWindow
+    partial class Main
     {
         /// <summary>
         /// Required designer variable.
@@ -28,33 +28,42 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.multipleTo_DoLists1 = new TheTabulator.MultipleTo_DoLists();
             this.calendar1 = new TheTabulator.Calendar();
             this.SuspendLayout();
             // 
+            // multipleTo_DoLists1
+            // 
+            this.multipleTo_DoLists1.Location = new System.Drawing.Point(12, 169);
+            this.multipleTo_DoLists1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.multipleTo_DoLists1.Name = "multipleTo_DoLists1";
+            this.multipleTo_DoLists1.Size = new System.Drawing.Size(488, 828);
+            this.multipleTo_DoLists1.TabIndex = 0;
+            // 
             // calendar1
             // 
-            this.calendar1.Location = new System.Drawing.Point(13, 13);
+            this.calendar1.Location = new System.Drawing.Point(508, 41);
             this.calendar1.Margin = new System.Windows.Forms.Padding(4);
             this.calendar1.Name = "calendar1";
-            this.calendar1.Size = new System.Drawing.Size(1437, 937);
-            this.calendar1.TabIndex = 0;
+            this.calendar1.Size = new System.Drawing.Size(1425, 956);
+            this.calendar1.TabIndex = 1;
             // 
-            // MainWindow
+            // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1448, 973);
+            this.ClientSize = new System.Drawing.Size(1924, 994);
             this.Controls.Add(this.calendar1);
-            this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "MainWindow";
-            this.Text = "Form1";
+            this.Controls.Add(this.multipleTo_DoLists1);
+            this.Name = "Main";
+            this.Text = "Main";
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
+        private MultipleTo_DoLists multipleTo_DoLists1;
         private Calendar calendar1;
     }
 }
-
