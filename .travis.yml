@@ -1,0 +1,6 @@
+language: csharp
+solution: TheTabulator.sln
+mono:
+	-4.7.2
+
+script: ./build.sh
