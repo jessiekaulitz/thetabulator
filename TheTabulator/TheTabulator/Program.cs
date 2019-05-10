@@ -33,7 +33,7 @@ namespace TheTabulator
             CalendarController.AddEvent(_testEvent);
 
 
-            Application.Run(new MainWindow());
+            Application.Run(new Main());
         }
     }
 }
