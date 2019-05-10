@@ -33,17 +33,19 @@
             // 
             // calendar1
             // 
-            this.calendar1.Location = new System.Drawing.Point(12, 22);
+            this.calendar1.Location = new System.Drawing.Point(13, 13);
+            this.calendar1.Margin = new System.Windows.Forms.Padding(4);
             this.calendar1.Name = "calendar1";
-            this.calendar1.Size = new System.Drawing.Size(1366, 683);
+            this.calendar1.Size = new System.Drawing.Size(1437, 937);
             this.calendar1.TabIndex = 0;
             // 
             // MainWindow
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1260, 658);
+            this.ClientSize = new System.Drawing.Size(1448, 973);
             this.Controls.Add(this.calendar1);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "MainWindow";
             this.Text = "Form1";
             this.ResumeLayout(false);

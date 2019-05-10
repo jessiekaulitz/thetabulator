@@ -16,15 +16,22 @@ namespace TheTabulator
         private string _location;
         private Label _eventLabel;
 
-        public CalendarEvent(string name)
+        //Need to do checks here to ensure startTime is before endTIme
+        //Also ensure on the same day date
+        //
+        public CalendarEvent(string name, DateTime startTime, DateTime endTime)
         {
             _name = name;
+            _startTime = startTime;
+            _endTime = endTime;
             _eventLabel = new Label();
+            _eventLabel.Dock = DockStyle.Fill;
+            _eventLabel.Text = "This is an event";
         }
 
         public void SaveEvent(StreamWriter streamWriter)
         {
-            DateTime cake = new DateTime();
+            //DateTime cake = new DateTime();
 
             //cake.TimeOfDay
 
@@ -36,15 +43,32 @@ namespace TheTabulator
 
         }
 
+        /// <summary>
+        /// Calculates the start indexes for both row and column position on the calendar
+        /// based on this event's start time.
+        /// </summary>
+        /// <param name="columnIndex">
+        /// Passed-by-reference column index. Initialised in the method.
+        /// </param>
+        /// <param name="startRowIndex">
+        /// Passed-by-reference row index. Initialised in the method.
+        /// </param>
         public void CalculateStartPosition(out int columnIndex, out int startRowIndex)
         {
-            columnIndex = default;
-            startRowIndex = default;
+            columnIndex = CalendarController.DayIndexForMondayWeekStart(_startTime.DayOfWeek);
+
+            //Table row index matches the hour (in 24 hr time) integer
+            startRowIndex = _startTime.Hour;
         }
 
+        /// <summary>
+        /// Calculates the ending row index position of the calendar based on this event's
+        /// end time.
+        /// </summary>
+        /// <returns></returns>
         public int CalculateEndRowPosition()
         {
-            return default;
+            return _endTime.Hour;
         }
 
         public string Name
@@ -71,6 +95,14 @@ namespace TheTabulator
             set
             {
                 _location = value;
+            }
+        }
+
+        public Label Label
+        {
+            get
+            {
+                return _eventLabel;
             }
         }
 
