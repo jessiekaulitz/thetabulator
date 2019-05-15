@@ -13,3 +13,4 @@ script:
   - mono ./testrunner/NUnit.ConsoleRunner.3.9.0/tools/nunit3-console.exe ./MyProject.Tests/bin/Release/MyProject.Tests.dll
   
 script: ./build.sh
+dist: xenial
