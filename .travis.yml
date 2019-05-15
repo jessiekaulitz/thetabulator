@@ -1,9 +1,9 @@
 language: csharp
 solution: TheTabulator.sln
-mono:
-  - latest
-  - 3.12.0
-  - 3.10.0
+nuget restore TheTabulator.sln
+
+msbuild /p:Configuration=Release TheTabulator.sln
+
 dotnet: 2.1.502
   - dotnet restore
   - dotnet test
