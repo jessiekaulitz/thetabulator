@@ -1,6 +1,9 @@
 language: csharp
 solution: TheTabulator.sln
-mono: none
+mono:
+  - latest
+  - 3.12.0
+  - 3.10.0
 dotnet: 2.1.502
 - dotnet restore
 - dotnet test
