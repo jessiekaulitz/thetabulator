@@ -1,5 +1,5 @@
 sudo: required
-dist: trusty
+dist: xenial
 
 language: csharp
 solution: TheTabulator.sln
@@ -10,5 +10,4 @@ dotnet: 2.2.107
 script:
   - dotnet restore
 
-  
 
