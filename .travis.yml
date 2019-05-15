@@ -1,13 +1,11 @@
-sudo: required
-dist: xenial
-
 language: csharp
-solution: TheTabulator.sln
-
-language: csharp
+dist: trusty
+dotnet: 1.0.1
 mono: none
-dotnet: 2.1.505
+env:
+  global:
+    - DOTNET_SKIP_FIRST_TIME_EXPERIENCE: 1
+    - DOTNET_CLI_TELEMETRY_OPTOUT: 1
 script:
-    - dotnet restore
-
-
+  - dotnet restore
+  - dotnet build
