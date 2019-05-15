@@ -5,5 +5,5 @@ dotnet: 2.1.502
 script:
  - dotnet restore
 
-
+sudo: required
 dist: xenial
