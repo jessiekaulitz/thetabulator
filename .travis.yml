@@ -2,6 +2,9 @@ language: csharp
 solution: TheTabulator.sln
 mono: none
 dotnet: 2.1.502
+- dotnet restore
+- dotnet test
+
 
 sudo: required
 dist: xenial
