@@ -6,7 +6,7 @@ script:
  - dotnet restore
 
 install:
-  - nuget restore solution-name.sln
+  - nuget restore TheTabulator.sln
   - nuget install NUnit.Console -Version 3.9.0 -OutputDirectory testrunner
 script:
   - msbuild /p:Configuration=Release solution-name.sln
