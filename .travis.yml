@@ -1,6 +1,15 @@
 language: csharp
 solution: TheTabulator.sln
-mono:
-	-4.7.2
+mono: none
+dotnet: 2.1.505
+script:
+ - dotnet restore
 
+install:
+  - nuget restore solution-name.sln
+  - nuget install NUnit.Console -Version 3.9.0 -OutputDirectory testrunner
+script:
+  - msbuild /p:Configuration=Release solution-name.sln
+  - mono ./testrunner/NUnit.ConsoleRunner.3.9.0/tools/nunit3-console.exe ./MyProject.Tests/bin/Release/MyProject.Tests.dll
+  
 script: ./build.sh
