@@ -10,11 +10,13 @@ namespace TheTabulator
 {
     public static class CalendarController
     {
+        public const DayOfWeek WeekStartDay = DayOfWeek.Monday;
+
         public const int DAYS_PER_WEEK = 7;
         /// <summary>
         /// Setting the start date of the week as the first Monday as of the current date.
         /// </summary>
-        private static DateTime _weekStartDate = DateTime.Now.WeekStartDate(DayOfWeek.Monday);
+        private static DateTime _weekStartDate = ThisWeekStart();
         /// <summary>
         /// List of all events ever created.
         /// </summary>
@@ -41,6 +43,31 @@ namespace TheTabulator
 
         }
 
+
+        /// <summary>
+        /// Checks if the week of the calendar is the same as the current week in time.
+        /// </summary>
+        /// <returns>
+        /// True <- If the calendar is in the current week.
+        /// False <- Not in the current week in time.
+        /// </returns>
+        public static bool AtThisWeek()
+        {
+            return _weekStartDate.Equals(ThisWeekStart());
+        }
+
+        /// <summary>
+        /// Returns an integer index representing the current day of the week.
+        /// </summary>
+        /// <returns></returns>
+        public static int CurrentDayIndex()
+        {
+            return DayIndexForMondayWeekStart(DateTime.Now.DayOfWeek);
+        }
+
+
+
+
         /// <summary>
         /// Moving this Controller's current week field forward by one week.
         /// </summary>
@@ -64,7 +91,12 @@ namespace TheTabulator
         /// </summary>
         public static void ResetWeek()
         {
-            _weekStartDate = DateTime.Now.WeekStartDate(DayOfWeek.Monday);
+            _weekStartDate = ThisWeekStart();
+        }
+
+        private static DateTime ThisWeekStart()
+        {
+            return DateTime.Now.WeekStartDate(WeekStartDay);
         }
 
         public static void DrawWeeksEvents(TableLayoutControlCollection cells)

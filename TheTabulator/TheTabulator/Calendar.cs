@@ -31,17 +31,28 @@ namespace TheTabulator
             label.Dock = DockStyle.Fill;
 
             calendarTable.Controls.Add(label, 2, 2);
-
         }
 
-        private void UpdateYearLabel()
+        private void HighlightCurrentDay()
         {
-            yearLabel.Text = CalendarController.YearString;
+            if (CalendarController.AtThisWeek())
+            {
+                int labelIndex = CalendarController.CurrentDayIndex();
+                dateNumbersPanel.Controls[labelIndex].BackColor = Color.Yellow;
+            }
         }
 
-        private void UpdateMonthLabel()
+        private void RemoveHighlight()
         {
-            monthLabel.Text = CalendarController.MonthString;
+            int labelIndex = CalendarController.CurrentDayIndex();
+            dateNumbersPanel.Controls[labelIndex].BackColor = SystemColors.Control;
+        }
+
+        private void UpdateMonthYearLabel()
+        {
+            monthYearLabel.Text = CalendarController.MonthString
+                              + " " 
+                              + CalendarController.YearString;
         }
 
         private void NextWeekButton_Click(object sender, EventArgs e)
@@ -71,9 +82,10 @@ namespace TheTabulator
 
         private void UpdateLabels()
         {
+            RemoveHighlight();
             UpdateDateLabels();
-            UpdateMonthLabel();
-            UpdateYearLabel();
+            UpdateMonthYearLabel();
+            HighlightCurrentDay();
         }
     }
 }
