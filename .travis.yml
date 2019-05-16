@@ -1,8 +1,12 @@
-
-  
 language: csharp
+dist: xenial
 solution: "TheTabulator.sln"
-install:
-- travis_retry nuget restore -source "https://www.nuget.org/api/v2" ./desktop/dp1/hdproject/thetabulator/TheTabulator.sln
+dotnet: SDK for VS2019
+mono: none
+env:
+  global:
+    - DOTNET_SKIP_FIRST_TIME_EXPERIENCE: 1
+    - DOTNET_CLI_TELEMETRY_OPTOUT: 1
 script:
-- xbuild ./desktop/dp1/hdproject/thetabulator/TheTabulator.sln
+  - dotnet restore
+  - dotnet build
