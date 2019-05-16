@@ -5,7 +5,8 @@ mono:
   - latest
   - 3.12.0
   - 3.10.0
-dotnet: 2.2.107
+dotnet: 
+  - latest
 env:
   global:
     - DOTNET_SKIP_FIRST_TIME_EXPERIENCE: 1
