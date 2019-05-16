@@ -1,7 +1,9 @@
 language: csharp
 dist: xenial
 solution: "TheTabulator.sln"
-dotnet: SDK for VS2019
+dotnet:
+  - latest
+  - 2.1.505
 mono: none
 env:
   global:
