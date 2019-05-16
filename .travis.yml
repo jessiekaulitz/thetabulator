@@ -1,6 +1,6 @@
 language: csharp
 dist: trusty
-solution: TheTabulator.sln
+solution: "TheTabulator.sln"
 dotnet: 2.1.505
 mono: none
 env:
