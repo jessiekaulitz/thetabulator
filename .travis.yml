@@ -3,6 +3,6 @@
 language: csharp
 solution: "TheTabulator.sln"
 install:
-- travis_retry nuget restore -source "https://www.nuget.org/api/v2" TheTabulator.sln
+- travis_retry nuget restore -source "https://www.nuget.org/api/v2" ./desktop/dp1/hdproject/thetabulator/TheTabulator.sln
 script:
-- xbuild TheTabulator.sln
+- xbuild ./desktop/dp1/hdproject/thetabulator/TheTabulator.sln
