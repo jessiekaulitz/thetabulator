@@ -1,5 +1,5 @@
 language: csharp
-dist: trusty
+dist: xenial
 solution: "TheTabulator.sln"
 dotnet: 2.1.505
 mono: none
