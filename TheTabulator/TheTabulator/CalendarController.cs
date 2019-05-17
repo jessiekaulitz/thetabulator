@@ -10,7 +10,7 @@ namespace TheTabulator
 {
     public static class CalendarController
     {
-        public const DayOfWeek WeekStartDay = DayOfWeek.Monday;
+        public const DayOfWeek WEEK_START_DAY = DayOfWeek.Monday;
 
         public const int DAYS_PER_WEEK = 7;
         /// <summary>
@@ -20,12 +20,12 @@ namespace TheTabulator
         /// <summary>
         /// List of all events ever created.
         /// </summary>
-        private static List<CalendarEvent> _eventList = new List<CalendarEvent>();
+        private static Dictionary<string, List<CalendarEvent>> _events = new Dictionary<string, List<CalendarEvent>>();
 
 
         public static void SaveEvents()
         {
-
+            
         }
 
         public static void LoadEvents()
@@ -35,12 +35,31 @@ namespace TheTabulator
 
         public static void AddEvent(CalendarEvent eventToAdd)
         {
-            _eventList.Add(eventToAdd);
+
+            if (!_events.ContainsKey(GetWeekKey()))
+                _events[GetWeekKey()] = new List<CalendarEvent>();
+
+            _events[GetWeekKey()].Add(eventToAdd);
         }
+
 
         public static void EditEvent(CalendarEvent eventToEdit)
         {
+            
+        }
 
+        public static DateTime DateTimeFromIndex(int colIndex, int rowIndex)
+        {
+            return DateTime.Now;
+        }
+
+        /// <summary>
+        /// Returns the string key for the events dictionary for the current week.
+        /// </summary>
+        /// <returns></returns>
+        private static string GetWeekKey()
+        {
+            return _weekStartDate.ToShortDateString();
         }
 
 
@@ -51,7 +70,7 @@ namespace TheTabulator
         /// True <- If the calendar is in the current week.
         /// False <- Not in the current week in time.
         /// </returns>
-        public static bool AtThisWeek()
+        public static bool IsAtThisWeek()
         {
             return _weekStartDate.Equals(ThisWeekStart());
         }
@@ -75,6 +94,9 @@ namespace TheTabulator
         {
             //Advance the current week date by a week (automatically rolls over to next month/year)
             _weekStartDate = _weekStartDate.AddDays(DAYS_PER_WEEK);
+
+            if (!_events.ContainsKey(GetWeekKey()))
+                _events[GetWeekKey()] = new List<CalendarEvent>();
         }
 
         /// <summary>
@@ -84,7 +106,12 @@ namespace TheTabulator
         {
             //Subtract a week from the current week date (automatically rolls over to previous month/year)
             _weekStartDate = _weekStartDate.Subtract(TimeSpan.FromDays(DAYS_PER_WEEK));
+
+            if (!_events.ContainsKey(GetWeekKey()))
+                _events[GetWeekKey()] = new List<CalendarEvent>();
         }
+
+        //private static void CreateNewEventList()
 
         /// <summary>
         /// Setting the start date of the week back to the first Monday as of the current date.
@@ -94,16 +121,20 @@ namespace TheTabulator
             _weekStartDate = ThisWeekStart();
         }
 
+        /// <summary>
+        /// Returns a DateTime object at the start of the current week.
+        /// </summary>
+        /// <returns></returns>
         private static DateTime ThisWeekStart()
         {
-            return DateTime.Now.WeekStartDate(WeekStartDay);
+            return DateTime.Now.WeekStartDate(WEEK_START_DAY);
         }
 
         public static void DrawWeeksEvents(TableLayoutControlCollection cells)
         {
             int columnIndex, startRowIndex, endRowIndex;
-
-            foreach (CalendarEvent cEvent in _eventList)
+            
+            foreach (CalendarEvent cEvent in _events[GetWeekKey()])
             {
                 //V Doesnt seem to work better, need to find better method
                 //cells.ClearOptimised();
@@ -114,6 +145,7 @@ namespace TheTabulator
 
                 cells.Add(cEvent.Label, columnIndex, startRowIndex);
             }
+            
         }
 
         public static string YearString

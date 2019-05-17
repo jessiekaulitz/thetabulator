@@ -28,7 +28,7 @@ namespace TheTabulator
             //Creating end time for Wednesday, 20th of March, 2019 at 2pm
             DateTime _eventEnd = _eventStart.AddHours(4);
 
-            CalendarEvent _testEvent = new CalendarEvent("test", _eventStart, _eventEnd);
+            CalendarEvent _testEvent = new CalendarEvent("test", "location", _eventStart, _eventEnd);
 
             CalendarController.AddEvent(_testEvent);
 

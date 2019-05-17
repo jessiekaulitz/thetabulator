@@ -19,14 +19,15 @@ namespace TheTabulator
         //Need to do checks here to ensure startTime is before endTIme
         //Also ensure on the same day date
         //
-        public CalendarEvent(string name, DateTime startTime, DateTime endTime)
+        public CalendarEvent(string name, string location, DateTime startTime, DateTime endTime)
         {
             _name = name;
             _startTime = startTime;
             _endTime = endTime;
             _eventLabel = new Label();
+            _eventLabel.BackColor = System.Drawing.Color.Blue;
             _eventLabel.Dock = DockStyle.Fill;
-            _eventLabel.Text = "This is an event";
+            _eventLabel.Text = name;
         }
 
         public void SaveEvent(StreamWriter streamWriter)
