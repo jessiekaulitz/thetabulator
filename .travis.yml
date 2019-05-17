@@ -1,6 +1,10 @@
+dist: trusty
+sudo: required
 language: csharp
-solution: TheTabulator/TheTabulator.sln
+mono: none
 dotnet: 2.1.602
+solution: TheTabulator.sln
 script:
+  - cd TheTabulator
   - dotnet restore
-  - dotnet build
+  - dotnet build -c Release
