@@ -29,8 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.monthLabel = new System.Windows.Forms.Label();
-            this.yearLabel = new System.Windows.Forms.Label();
+            this.monthYearLabel = new System.Windows.Forms.Label();
             this.calendarTable = new System.Windows.Forms.TableLayoutPanel();
             this.mondayLabel = new System.Windows.Forms.Label();
             this.tuesdayLabel = new System.Windows.Forms.Label();
@@ -79,27 +78,16 @@
             ((System.ComponentModel.ISupportInitialize)(this.eventBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
-            // monthLabel
+            // monthYearLabel
             // 
-            this.monthLabel.AutoSize = true;
-            this.monthLabel.Font = new System.Drawing.Font("Tahoma", 26F);
-            this.monthLabel.Location = new System.Drawing.Point(235, 28);
-            this.monthLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.monthLabel.Name = "monthLabel";
-            this.monthLabel.Size = new System.Drawing.Size(175, 53);
-            this.monthLabel.TabIndex = 1;
-            this.monthLabel.Text = "January";
-            // 
-            // yearLabel
-            // 
-            this.yearLabel.AutoSize = true;
-            this.yearLabel.Font = new System.Drawing.Font("Tahoma", 26F);
-            this.yearLabel.Location = new System.Drawing.Point(418, 28);
-            this.yearLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.yearLabel.Name = "yearLabel";
-            this.yearLabel.Size = new System.Drawing.Size(119, 53);
-            this.yearLabel.TabIndex = 10;
-            this.yearLabel.Text = "2019";
+            this.monthYearLabel.AutoSize = true;
+            this.monthYearLabel.Font = new System.Drawing.Font("Tahoma", 26F);
+            this.monthYearLabel.Location = new System.Drawing.Point(235, 28);
+            this.monthYearLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.monthYearLabel.Name = "monthYearLabel";
+            this.monthYearLabel.Size = new System.Drawing.Size(285, 53);
+            this.monthYearLabel.TabIndex = 1;
+            this.monthYearLabel.Text = "January 2019";
             // 
             // calendarTable
             // 
@@ -146,6 +134,7 @@
             this.calendarTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
             this.calendarTable.Size = new System.Drawing.Size(1353, 771);
             this.calendarTable.TabIndex = 2;
+            this.calendarTable.MouseClick += new System.Windows.Forms.MouseEventHandler(this.CalendarTable_MouseClick);
             // 
             // mondayLabel
             // 
@@ -651,9 +640,8 @@
             this.Controls.Add(this.wednesdayLabel);
             this.Controls.Add(this.tuesdayLabel);
             this.Controls.Add(this.mondayLabel);
-            this.Controls.Add(this.yearLabel);
             this.Controls.Add(this.calendarTable);
-            this.Controls.Add(this.monthLabel);
+            this.Controls.Add(this.monthYearLabel);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Calendar";
             this.Size = new System.Drawing.Size(1425, 956);
@@ -667,8 +655,8 @@
         }
 
         #endregion
-        private System.Windows.Forms.Label monthLabel;
-        private System.Windows.Forms.Label yearLabel;
+
+        private System.Windows.Forms.Label monthYearLabel;
         private System.Windows.Forms.TableLayoutPanel calendarTable;
         private System.Windows.Forms.Label mondayLabel;
         private System.Windows.Forms.Label tuesdayLabel;

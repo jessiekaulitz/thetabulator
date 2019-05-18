@@ -1,6 +1,11 @@
+os: windows
+dist: trusty
+sudo: required
 language: csharp
+mono: none
+dotnet: 2.1.602
 solution: TheTabulator.sln
-mono:
-	-4.7.2
-
-script: ./build.sh
+script:
+  - cd TheTabulator
+  - dotnet restore
+  - dotnet build -c Release
