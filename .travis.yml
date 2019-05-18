@@ -2,6 +2,8 @@ language: csharp
 mono: none
 dotnet: 2.1.502
 solution: TheTabulator/DotnetCOREClasses/DotnetCOREClasses.sln
+install:
+  - nuget restore TheTabulator/DotnetCOREClasses/DotnetCOREClasses.sln
 script:
   - dotnet restore
   - dotnet test
