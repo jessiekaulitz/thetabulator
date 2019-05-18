@@ -1,11 +1,8 @@
-os: windows
-dist: trusty
-sudo: required
 language: csharp
-mono: none
-dotnet: 2.1.602
-solution: TheTabulator.sln
-script:
-  - cd TheTabulator
-  - dotnet restore
-  - dotnet build -c Release
+solution: TheTabulator/DotnetCOREClasses/DotnetCOREClasses.sln
+before_install:
+  - sudo apt-get install nunit-console
+before_script:
+  - nuget restore TheTabulator/DotnetCOREClasses/DotnetCOREClasses.sln
+after_script:
+  - nunit-console TheTabulator/DotnetCOREClasses/DotnetCOREClassesTests/bin/Debug/netcoreapp2.1/DotnetCOREClassesTests.dll
