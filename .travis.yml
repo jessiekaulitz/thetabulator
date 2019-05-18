@@ -5,4 +5,4 @@ install:
   - nuget install NUnit.Console -Version 3.9.0 -OutputDirectory testrunner
 script:
   - msbuild /p:Configuration=Release TheTabulator/DotnetCOREClasses/DotnetCOREClasses.sln
-  - mono ./testrunner/NUnit.ConsoleRunner.3.9.0/tools/nunit3-console.exe ./TheTabulator/DotnetCOREClasses/DotnetCOREClassesTests/bin/Release/DotnetCOREClassesTests.dll
+  - mono ./testrunner/NUnit.ConsoleRunner.3.9.0/tools/nunit3-console.exe ./TheTabulator/DotnetCOREClasses/DotnetCOREClassesTests/bin/Release/netcoreapp2.1/DotnetCOREClassesTests.dll
