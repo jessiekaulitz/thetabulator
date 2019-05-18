@@ -33,14 +33,6 @@ namespace TheTabulator
 
 
 
-        public static void ClearOptimised(this TableLayoutControlCollection cells)
-        {
-            foreach(Label label in cells)
-            {
-                cells.Remove(label);
-            }
-        }
-
         /// <summary>
         /// Returns a string representing the full month name of this date.
         /// </summary>
