@@ -4,5 +4,7 @@ before_install:
   - sudo apt-get install nunit-console
 before_script:
   - nuget restore TheTabulator/DotnetCOREClasses/DotnetCOREClasses.sln
+script:
+  -mono ./testrunner/NUnit.ConsoleRunner.3.9.0/tools/nunit3-console.exe TheTabulator/DotnetCOREClasses/DotnetCOREClassesTests/bin/Debug/netcoreapp2.1/DotnetCOREClassesTests.dll
 after_script:
   - nunit-console TheTabulator/DotnetCOREClasses/DotnetCOREClassesTests/bin/Debug/netcoreapp2.1/DotnetCOREClassesTests.dll
