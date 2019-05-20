@@ -10,24 +10,22 @@ namespace TheTabulator
 {
     public class CalendarEvent
     {
+        public static System.Drawing.Color DEFAULT_COLOR = System.Drawing.Color.Purple;
+
         private DateTime _startTime;
         private DateTime _endTime;
         private string _name;
         private string _location;
         private Label _eventLabel;
 
-        //Need to do checks here to ensure startTime is before endTIme
-        //Also ensure on the same day date
-        //
         public CalendarEvent(string name, string location, DateTime startTime, DateTime endTime)
         {
             _name = name;
             _startTime = startTime;
             _endTime = endTime;
             _eventLabel = new Label();
-            _eventLabel.BackColor = System.Drawing.Color.Blue;
+            _eventLabel.BackColor = DEFAULT_COLOR;
             _eventLabel.Dock = DockStyle.Fill;
-            _eventLabel.Text = name;
         }
 
         public void SaveEvent(StreamWriter streamWriter)
@@ -103,6 +101,7 @@ namespace TheTabulator
         {
             get
             {
+                _eventLabel.Text = _name;
                 return _eventLabel;
             }
         }

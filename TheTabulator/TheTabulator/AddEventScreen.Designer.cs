@@ -85,6 +85,7 @@
             this.nameInput.Name = "nameInput";
             this.nameInput.Size = new System.Drawing.Size(100, 22);
             this.nameInput.TabIndex = 0;
+            this.nameInput.TextChanged += new System.EventHandler(this.NameInput_TextChanged);
             // 
             // startTimeInput
             // 
@@ -125,6 +126,7 @@
             this.locationInput.Name = "locationInput";
             this.locationInput.Size = new System.Drawing.Size(100, 22);
             this.locationInput.TabIndex = 3;
+            this.locationInput.TextChanged += new System.EventHandler(this.LocationInput_TextChanged);
             // 
             // colorDialog
             // 
@@ -152,6 +154,7 @@
             // 
             // AddEventScreen
             // 
+            this.AcceptButton = this.newEventButton;
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(407, 287);

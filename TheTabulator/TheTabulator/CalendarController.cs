@@ -35,11 +35,19 @@ namespace TheTabulator
 
         public static void AddEvent(CalendarEvent eventToAdd)
         {
-
-            if (!_events.ContainsKey(GetWeekKey()))
-                _events[GetWeekKey()] = new List<CalendarEvent>();
-
             _events[GetWeekKey()].Add(eventToAdd);
+        }
+
+        public static void CalendarCellClicked(int colIndex, int rowIndex)
+        {
+            DateTime startingDateTime = _weekStartDate.AddDays(colIndex);
+            startingDateTime = startingDateTime.AddHours(rowIndex);
+
+            AddEventController eventScreenController = new AddEventController(startingDateTime);
+
+            AddEventScreen eventScreen = new AddEventScreen(eventScreenController);
+            eventScreen.StartPosition = FormStartPosition.CenterParent;
+            eventScreen.ShowDialog();
         }
 
 
@@ -94,9 +102,6 @@ namespace TheTabulator
         {
             //Advance the current week date by a week (automatically rolls over to next month/year)
             _weekStartDate = _weekStartDate.AddDays(DAYS_PER_WEEK);
-
-            if (!_events.ContainsKey(GetWeekKey()))
-                _events[GetWeekKey()] = new List<CalendarEvent>();
         }
 
         /// <summary>
@@ -107,8 +112,7 @@ namespace TheTabulator
             //Subtract a week from the current week date (automatically rolls over to previous month/year)
             _weekStartDate = _weekStartDate.Subtract(TimeSpan.FromDays(DAYS_PER_WEEK));
 
-            if (!_events.ContainsKey(GetWeekKey()))
-                _events[GetWeekKey()] = new List<CalendarEvent>();
+
         }
 
         //private static void CreateNewEventList()
@@ -133,19 +137,20 @@ namespace TheTabulator
         public static void DrawWeeksEvents(TableLayoutControlCollection cells)
         {
             int columnIndex, startRowIndex, endRowIndex;
-            
+
+            //In the case a week is being drawn for the fist time, or the calendar is first loaded
+            if (!_events.ContainsKey(GetWeekKey()))
+                _events[GetWeekKey()] = new List<CalendarEvent>();
+
+            cells.Clear();
+
             foreach (CalendarEvent cEvent in _events[GetWeekKey()])
             {
-                //V Doesnt seem to work better, need to find better method
-                //cells.ClearOptimised();
-                //cells.Clear();
-
                 cEvent.CalculateStartPosition(out columnIndex, out startRowIndex);
                 endRowIndex = cEvent.CalculateEndRowPosition();
 
                 cells.Add(cEvent.Label, columnIndex, startRowIndex);
             }
-            
         }
 
         public static string YearString

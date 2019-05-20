@@ -52,14 +52,13 @@ namespace TheTabulator
                 throw new Exception("Error: Should not be able to click if no cells in table.");
             int colIndex = calendarTable.CellClickedColumnIndex(e.X);
             int rowIndex = calendarTable.CellClickedRowIndex(e.Y);
-            MessageBox.Show("Cell coords are: (" + colIndex.ToString() + ", " + rowIndex.ToString() + ")");
+            //MessageBox.Show("Cell coords are: (" + colIndex.ToString() + ", " + rowIndex.ToString() + ")");
 
             //If there is not already an event in the current cell
             if (calendarTable.GetControlFromPosition(colIndex, rowIndex) == null)
             {
-                AddEventScreen eventScreen = new AddEventScreen(colIndex, rowIndex);
-                eventScreen.StartPosition = FormStartPosition.CenterParent;
-                eventScreen.ShowDialog();
+                CalendarController.CalendarCellClicked(colIndex, rowIndex);
+                UpdateCalendar();
             }
             else
                 MessageBox.Show("Spot taken");
@@ -108,7 +107,9 @@ namespace TheTabulator
             UpdateDateLabels();
             UpdateMonthYearLabel();
             HighlightCurrentDay();
+            calendarTable.Visible = false;
             CalendarController.DrawWeeksEvents(calendarTable.Controls);
+            calendarTable.Visible = true;
         }
     }
 }
