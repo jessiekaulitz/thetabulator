@@ -21,17 +21,8 @@ namespace TheTabulator
         {
             //Setting the vertical scroll to start 50% down to show the more relevant times people like
             calendarTable.VerticalScroll.Value = 50;
-            UpdateCalendar();
-            //calendarTable.Controls.Clear
-            
-            Label label = new Label();
-            label.BackColor = Color.MediumPurple;
-            label.Text = "Event here not added to list";
-            label.Dock = DockStyle.Fill;
-            //calendarTable.SetRowSpan(label, 22);
-            calendarTable.Controls.Add(label, 2, 2);
-            
 
+            UpdateCalendar();
         }
 
         private void NextWeekButton_Click(object sender, EventArgs e)
@@ -50,16 +41,15 @@ namespace TheTabulator
         {
             if ((calendarTable.ColumnCount < 1) || (calendarTable.RowCount < 1))
                 throw new Exception("Error: Should not be able to click if no cells in table.");
+
             int colIndex = calendarTable.CellClickedColumnIndex(e.X);
             int rowIndex = calendarTable.CellClickedRowIndex(e.Y);
-            MessageBox.Show("Cell coords are: (" + colIndex.ToString() + ", " + rowIndex.ToString() + ")");
 
             //If there is not already an event in the current cell
             if (calendarTable.GetControlFromPosition(colIndex, rowIndex) == null)
             {
-                AddEventScreen eventScreen = new AddEventScreen(colIndex, rowIndex);
-                eventScreen.StartPosition = FormStartPosition.CenterParent;
-                eventScreen.ShowDialog();
+                CalendarController.NewEventRequest(colIndex, rowIndex);
+                UpdateCalendar();
             }
             else
                 MessageBox.Show("Spot taken");
@@ -108,7 +98,9 @@ namespace TheTabulator
             UpdateDateLabels();
             UpdateMonthYearLabel();
             HighlightCurrentDay();
-            CalendarController.DrawWeeksEvents(calendarTable.Controls);
+            calendarTable.Visible = false;
+            CalendarController.DrawWeeksEvents(calendarTable);
+            calendarTable.Visible = true;
         }
     }
 }

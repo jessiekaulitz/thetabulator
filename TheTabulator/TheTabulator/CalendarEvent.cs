@@ -10,38 +10,32 @@ namespace TheTabulator
 {
     public class CalendarEvent
     {
+        public static System.Drawing.Color DEFAULT_COLOR = System.Drawing.Color.Purple;
+
         private DateTime _startTime;
         private DateTime _endTime;
         private string _name;
         private string _location;
         private Label _eventLabel;
 
-        //Need to do checks here to ensure startTime is before endTIme
-        //Also ensure on the same day date
-        //
         public CalendarEvent(string name, string location, DateTime startTime, DateTime endTime)
         {
             _name = name;
             _startTime = startTime;
             _endTime = endTime;
             _eventLabel = new Label();
-            _eventLabel.BackColor = System.Drawing.Color.Blue;
+            _eventLabel.BackColor = DEFAULT_COLOR;
             _eventLabel.Dock = DockStyle.Fill;
-            _eventLabel.Text = name;
         }
 
         public void SaveEvent(StreamWriter streamWriter)
         {
-            //DateTime cake = new DateTime();
-
-            //cake.TimeOfDay
-
-            //cake.DayOfWeek;
+            throw new NotImplementedException();
         }
 
         public void LoadEvent(StreamReader streamReader)
         {
-
+            throw new NotImplementedException();
         }
 
         /// <summary>
@@ -63,13 +57,24 @@ namespace TheTabulator
         }
 
         /// <summary>
-        /// Calculates the ending row index position of the calendar based on this event's
-        /// end time.
+        /// Calculates the row span of this event's label calendar based on its
+        /// end time in relation to its start time.
         /// </summary>
         /// <returns></returns>
-        public int CalculateEndRowPosition()
+        public int CalculateRowSpan()
         {
-            return _endTime.Hour;
+            //Number of rows to span is the difference in the start and end hours.
+            int rowSpan = (_endTime.Hour24() - _startTime.Hour24());
+
+            //For events lasting less than an hour, must still span 1 full row.
+            if (rowSpan < 1) rowSpan = 1;
+
+            return rowSpan;
+        }
+
+        public void UpdateLabelText()
+        {
+            _eventLabel.Text = _name + " " + _startTime.ToShortTimeString();
         }
 
         public string Name
