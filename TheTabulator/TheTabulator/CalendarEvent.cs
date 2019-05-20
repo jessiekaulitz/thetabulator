@@ -30,16 +30,12 @@ namespace TheTabulator
 
         public void SaveEvent(StreamWriter streamWriter)
         {
-            //DateTime cake = new DateTime();
-
-            //cake.TimeOfDay
-
-            //cake.DayOfWeek;
+            throw new NotImplementedException();
         }
 
         public void LoadEvent(StreamReader streamReader)
         {
-
+            throw new NotImplementedException();
         }
 
         /// <summary>
@@ -61,13 +57,24 @@ namespace TheTabulator
         }
 
         /// <summary>
-        /// Calculates the ending row index position of the calendar based on this event's
-        /// end time.
+        /// Calculates the row span of this event's label calendar based on its
+        /// end time in relation to its start time.
         /// </summary>
         /// <returns></returns>
-        public int CalculateEndRowPosition()
+        public int CalculateRowSpan()
         {
-            return _endTime.Hour;
+            //Number of rows to span is the difference in the start and end hours.
+            int rowSpan = (_endTime.Hour24() - _startTime.Hour24());
+
+            //For events lasting less than an hour, must still span 1 full row.
+            if (rowSpan < 1) rowSpan = 1;
+
+            return rowSpan;
+        }
+
+        public void UpdateLabelText()
+        {
+            _eventLabel.Text = _name + " " + _startTime.ToShortTimeString();
         }
 
         public string Name
@@ -101,7 +108,6 @@ namespace TheTabulator
         {
             get
             {
-                _eventLabel.Text = _name;
                 return _eventLabel;
             }
         }

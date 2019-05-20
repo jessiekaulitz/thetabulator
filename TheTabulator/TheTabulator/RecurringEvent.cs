@@ -12,7 +12,7 @@ namespace TheTabulator
 
         public RecurringEvent(string name, string location, DateTime startTime, DateTime endTime) : base (name, location, startTime, endTime)
         {
-
+            throw new NotImplementedException();
         }
     }
 }

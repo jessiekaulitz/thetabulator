@@ -9,11 +9,14 @@ namespace TheTabulator
 {
     public class AddEventController
     {
+        /// <summary>
+        /// The new CalendarEvent to be added to the calendar.
+        /// </summary>
         private CalendarEvent _newEvent;
 
         public AddEventController(DateTime eventStart)
         {
-            _newEvent = new CalendarEvent("", "", eventStart, eventStart.AddHours(1));
+            _newEvent = new CalendarEvent("", "", eventStart, eventStart.AddHours(3));
         }
         
 
@@ -24,6 +27,7 @@ namespace TheTabulator
         {
             CalendarController.AddEvent(_newEvent);
         }
+
 
         /// <summary>
         /// Validates the fields of this controller's event
@@ -37,11 +41,12 @@ namespace TheTabulator
             return (_newEvent.Name != "");
         }
 
+
         public System.Drawing.Color EventColor
         {
             set
             {
-                _newEvent.Color = value; ;
+                _newEvent.Color = value;
             }
         }
 
