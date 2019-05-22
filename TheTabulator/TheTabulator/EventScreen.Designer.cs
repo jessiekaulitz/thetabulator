@@ -46,84 +46,104 @@
             // eventNameLabel
             // 
             this.eventNameLabel.AutoSize = true;
-            this.eventNameLabel.Location = new System.Drawing.Point(96, 55);
+            this.eventNameLabel.Font = new System.Drawing.Font("Century Gothic", 8.25F);
+            this.eventNameLabel.Location = new System.Drawing.Point(65, 45);
+            this.eventNameLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.eventNameLabel.Name = "eventNameLabel";
-            this.eventNameLabel.Size = new System.Drawing.Size(89, 17);
+            this.eventNameLabel.Size = new System.Drawing.Size(79, 16);
             this.eventNameLabel.TabIndex = 4;
             this.eventNameLabel.Text = "Event Name:";
             // 
             // startTimeLabel
             // 
             this.startTimeLabel.AutoSize = true;
-            this.startTimeLabel.Location = new System.Drawing.Point(108, 90);
+            this.startTimeLabel.Font = new System.Drawing.Font("Century Gothic", 8.25F);
+            this.startTimeLabel.Location = new System.Drawing.Point(81, 73);
+            this.startTimeLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.startTimeLabel.Name = "startTimeLabel";
-            this.startTimeLabel.Size = new System.Drawing.Size(77, 17);
+            this.startTimeLabel.Size = new System.Drawing.Size(63, 16);
             this.startTimeLabel.TabIndex = 5;
             this.startTimeLabel.Text = "Start Time:";
             // 
             // endTimeLabel
             // 
             this.endTimeLabel.AutoSize = true;
-            this.endTimeLabel.Location = new System.Drawing.Point(113, 125);
+            this.endTimeLabel.Font = new System.Drawing.Font("Century Gothic", 8.25F);
+            this.endTimeLabel.Location = new System.Drawing.Point(85, 102);
+            this.endTimeLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.endTimeLabel.Name = "endTimeLabel";
-            this.endTimeLabel.Size = new System.Drawing.Size(72, 17);
+            this.endTimeLabel.Size = new System.Drawing.Size(59, 16);
             this.endTimeLabel.TabIndex = 6;
             this.endTimeLabel.Text = "End Time:";
             // 
             // eventDateLabel
             // 
             this.eventDateLabel.AutoSize = true;
-            this.eventDateLabel.Location = new System.Drawing.Point(64, 20);
+            this.eventDateLabel.Font = new System.Drawing.Font("Century Gothic", 8.25F);
+            this.eventDateLabel.Location = new System.Drawing.Point(85, 16);
+            this.eventDateLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.eventDateLabel.Name = "eventDateLabel";
-            this.eventDateLabel.Size = new System.Drawing.Size(73, 17);
+            this.eventDateLabel.Size = new System.Drawing.Size(71, 16);
             this.eventDateLabel.TabIndex = 7;
-            this.eventDateLabel.Text = "Event for: ";
+            this.eventDateLabel.Text = "Event for:    ";
             // 
             // nameInput
             // 
-            this.nameInput.Location = new System.Drawing.Point(203, 52);
+            this.nameInput.Font = new System.Drawing.Font("Century Gothic", 8.25F);
+            this.nameInput.Location = new System.Drawing.Point(152, 42);
+            this.nameInput.Margin = new System.Windows.Forms.Padding(2);
             this.nameInput.Name = "nameInput";
-            this.nameInput.Size = new System.Drawing.Size(100, 22);
+            this.nameInput.Size = new System.Drawing.Size(76, 21);
             this.nameInput.TabIndex = 0;
             // 
             // startTimeInput
             // 
-            this.startTimeInput.Location = new System.Drawing.Point(203, 87);
+            this.startTimeInput.Font = new System.Drawing.Font("Century Gothic", 8.25F);
+            this.startTimeInput.Location = new System.Drawing.Point(152, 71);
+            this.startTimeInput.Margin = new System.Windows.Forms.Padding(2);
             this.startTimeInput.Name = "startTimeInput";
-            this.startTimeInput.Size = new System.Drawing.Size(100, 22);
+            this.startTimeInput.Size = new System.Drawing.Size(76, 21);
             this.startTimeInput.TabIndex = 1;
             // 
             // endTimeInput
             // 
-            this.endTimeInput.Location = new System.Drawing.Point(203, 122);
+            this.endTimeInput.Font = new System.Drawing.Font("Century Gothic", 8.25F);
+            this.endTimeInput.Location = new System.Drawing.Point(152, 99);
+            this.endTimeInput.Margin = new System.Windows.Forms.Padding(2);
             this.endTimeInput.Name = "endTimeInput";
-            this.endTimeInput.Size = new System.Drawing.Size(100, 22);
+            this.endTimeInput.Size = new System.Drawing.Size(76, 21);
             this.endTimeInput.TabIndex = 2;
             // 
             // eventButton
             // 
-            this.eventButton.Location = new System.Drawing.Point(203, 234);
-            this.eventButton.Name = "eventButton";
-            this.eventButton.Size = new System.Drawing.Size(100, 23);
-            this.eventButton.TabIndex = 5;
-            this.eventButton.Text = "Button";
-            this.eventButton.UseVisualStyleBackColor = true;
-            this.eventButton.Click += new System.EventHandler(this.NewEventButton_Click);
+            this.newEventButton.Font = new System.Drawing.Font("Century Gothic", 8.25F);
+            this.newEventButton.Location = new System.Drawing.Point(152, 190);
+            this.newEventButton.Margin = new System.Windows.Forms.Padding(2);
+            this.newEventButton.Name = "newEventButton";
+            this.newEventButton.Size = new System.Drawing.Size(75, 23);
+            this.newEventButton.TabIndex = 5;
+            this.newEventButton.Text = "Add Event";
+            this.newEventButton.UseVisualStyleBackColor = true;
+            this.newEventButton.Click += new System.EventHandler(this.NewEventButton_Click);
             // 
             // locationLabel
             // 
             this.locationLabel.AutoSize = true;
-            this.locationLabel.Location = new System.Drawing.Point(119, 160);
+            this.locationLabel.Font = new System.Drawing.Font("Century Gothic", 8.25F);
+            this.locationLabel.Location = new System.Drawing.Point(86, 130);
+            this.locationLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.locationLabel.Name = "locationLabel";
-            this.locationLabel.Size = new System.Drawing.Size(66, 17);
+            this.locationLabel.Size = new System.Drawing.Size(58, 16);
             this.locationLabel.TabIndex = 8;
             this.locationLabel.Text = "Location:";
             // 
             // locationInput
             // 
-            this.locationInput.Location = new System.Drawing.Point(203, 157);
+            this.locationInput.Font = new System.Drawing.Font("Century Gothic", 8.25F);
+            this.locationInput.Location = new System.Drawing.Point(152, 128);
+            this.locationInput.Margin = new System.Windows.Forms.Padding(2);
             this.locationInput.Name = "locationInput";
-            this.locationInput.Size = new System.Drawing.Size(100, 22);
+            this.locationInput.Size = new System.Drawing.Size(76, 21);
             this.locationInput.TabIndex = 3;
             // 
             // colorDialog
@@ -134,28 +154,33 @@
             // colorLabel
             // 
             this.colorLabel.AutoSize = true;
-            this.colorLabel.Location = new System.Drawing.Point(140, 195);
+            this.colorLabel.Font = new System.Drawing.Font("Century Gothic", 8.25F);
+            this.colorLabel.Location = new System.Drawing.Point(105, 158);
+            this.colorLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.colorLabel.Name = "colorLabel";
-            this.colorLabel.Size = new System.Drawing.Size(45, 17);
+            this.colorLabel.Size = new System.Drawing.Size(39, 16);
             this.colorLabel.TabIndex = 9;
             this.colorLabel.Text = "Color:";
             // 
             // colorInput
             // 
-            this.colorInput.Location = new System.Drawing.Point(203, 192);
+            this.colorInput.Font = new System.Drawing.Font("Century Gothic", 8.25F);
+            this.colorInput.Location = new System.Drawing.Point(152, 156);
+            this.colorInput.Margin = new System.Windows.Forms.Padding(2);
             this.colorInput.Name = "colorInput";
             this.colorInput.ReadOnly = true;
-            this.colorInput.Size = new System.Drawing.Size(100, 22);
+            this.colorInput.Size = new System.Drawing.Size(76, 21);
             this.colorInput.TabIndex = 4;
             this.colorInput.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.colorInput.Click += new System.EventHandler(this.ColorInput_Click);
             // 
             // EventScreen
             // 
-            this.AcceptButton = this.eventButton;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AcceptButton = this.newEventButton;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(407, 287);
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(305, 233);
             this.Controls.Add(this.colorInput);
             this.Controls.Add(this.colorLabel);
             this.Controls.Add(this.locationInput);
@@ -168,6 +193,7 @@
             this.Controls.Add(this.endTimeLabel);
             this.Controls.Add(this.startTimeLabel);
             this.Controls.Add(this.eventNameLabel);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "EventScreen";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "EventScreen";
