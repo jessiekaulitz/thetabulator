@@ -35,7 +35,7 @@
             this.nameInput = new System.Windows.Forms.TextBox();
             this.startTimeInput = new System.Windows.Forms.TextBox();
             this.endTimeInput = new System.Windows.Forms.TextBox();
-            this.newEventButton = new System.Windows.Forms.Button();
+            this.eventButton = new System.Windows.Forms.Button();
             this.locationLabel = new System.Windows.Forms.Label();
             this.locationInput = new System.Windows.Forms.TextBox();
             this.colorDialog = new System.Windows.Forms.ColorDialog();
@@ -95,7 +95,6 @@
             this.nameInput.Name = "nameInput";
             this.nameInput.Size = new System.Drawing.Size(76, 21);
             this.nameInput.TabIndex = 0;
-            this.nameInput.TextChanged += new System.EventHandler(this.NameInput_TextChanged);
             // 
             // startTimeInput
             // 
@@ -115,7 +114,7 @@
             this.endTimeInput.Size = new System.Drawing.Size(76, 21);
             this.endTimeInput.TabIndex = 2;
             // 
-            // newEventButton
+            // eventButton
             // 
             this.newEventButton.Font = new System.Drawing.Font("Century Gothic", 8.25F);
             this.newEventButton.Location = new System.Drawing.Point(152, 190);
@@ -146,7 +145,6 @@
             this.locationInput.Name = "locationInput";
             this.locationInput.Size = new System.Drawing.Size(76, 21);
             this.locationInput.TabIndex = 3;
-            this.locationInput.TextChanged += new System.EventHandler(this.LocationInput_TextChanged);
             // 
             // colorDialog
             // 
@@ -187,7 +185,7 @@
             this.Controls.Add(this.colorLabel);
             this.Controls.Add(this.locationInput);
             this.Controls.Add(this.locationLabel);
-            this.Controls.Add(this.newEventButton);
+            this.Controls.Add(this.eventButton);
             this.Controls.Add(this.endTimeInput);
             this.Controls.Add(this.startTimeInput);
             this.Controls.Add(this.nameInput);
@@ -199,7 +197,6 @@
             this.Name = "EventScreen";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "EventScreen";
-            this.Load += new System.EventHandler(this.AddEventScreen_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -214,7 +211,7 @@
         private System.Windows.Forms.TextBox nameInput;
         private System.Windows.Forms.TextBox startTimeInput;
         private System.Windows.Forms.TextBox endTimeInput;
-        private System.Windows.Forms.Button newEventButton;
+        private System.Windows.Forms.Button eventButton;
         private System.Windows.Forms.Label locationLabel;
         private System.Windows.Forms.TextBox locationInput;
         private System.Windows.Forms.ColorDialog colorDialog;

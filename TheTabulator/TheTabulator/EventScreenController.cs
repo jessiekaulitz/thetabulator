@@ -15,12 +15,20 @@ namespace TheTabulator
         protected CalendarEvent _event;
 
 
+        /// <summary>
+        /// Makes the controller execute its primary operation (add or edit event).
+        /// </summary>
         public abstract void Action();
 
+        /// <summary>
+        /// Controller runs the EventScreen window with the specifications for its controller purpose
+        /// (add or edit).
+        /// </summary>
         public abstract void RunWindow();
 
         /// <summary>
-        /// Validates this Controller's event field
+        /// Validates the fields for a CalendarEvent
+        /// If successful, assigns these parameters to the CalendarEvent of this controller.
         /// </summary>
         /// <param name="name"></param>
         /// <param name="startTime"></param>
@@ -28,8 +36,8 @@ namespace TheTabulator
         /// <param name="location"></param>
         /// <param name="color"></param>
         /// <returns>
-        /// True <- Controller's event is valid and can be added to the event list
-        /// False <- Event is invalid
+        /// True <- Controller's event is valid and has been updated with the new data, ready for Controller Action().
+        /// False <- Parameters are invalid, no changes to event saved.
         /// </returns>
         public bool ValidateEvent(string name, string startTime, string endTime, string location, System.Drawing.Color color)
         {
