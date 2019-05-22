@@ -26,6 +26,13 @@ namespace TheTabulator
             _eventLabel = new Label();
             _eventLabel.BackColor = DEFAULT_COLOR;
             _eventLabel.Dock = DockStyle.Fill;
+            _eventLabel.MouseClick += new MouseEventHandler(Label_Click);
+        }
+
+        private void Label_Click(object sender, EventArgs e)
+        {
+            EditEventController eventScreenController = new EditEventController(this);
+            eventScreenController.RunWindow();
         }
 
         public void SaveEvent(StreamWriter streamWriter)

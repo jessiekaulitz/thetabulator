@@ -39,7 +39,7 @@ namespace TheTabulator.Tests
         }
 
         [TestMethod()]
-        public void CalculateEndRowPositionTest()
+        public void CalculateRowSpanTest()
         {
             //Creating a new date for Saturday, May 4th, 2019 at 10am
             DateTime startTime = new DateTime(2019, 5, 4, 10, 0, 0);
@@ -52,7 +52,7 @@ namespace TheTabulator.Tests
             //Event should end on the 14th row index for 2pm (1400)
             int expected = 14;
 
-            int actual = testEvent.CalculateEndRowPosition();
+            int actual = testEvent.CalculateRowSpan();
 
             Assert.AreEqual(expected, actual);
         }

@@ -54,10 +54,7 @@ namespace TheTabulator
             startingDateTime = startingDateTime.AddHours(rowIndex);
 
             AddEventController eventScreenController = new AddEventController(startingDateTime);
-
-            AddEventScreen eventScreen = new AddEventScreen(eventScreenController);
-            eventScreen.StartPosition = FormStartPosition.CenterParent;
-            eventScreen.ShowDialog();
+            eventScreenController.RunWindow();
         }
 
 

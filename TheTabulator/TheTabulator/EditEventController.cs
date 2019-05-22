@@ -3,15 +3,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using System.Windows.Forms;
 
 namespace TheTabulator
 {
-    public class AddEventController : EventScreenController
+    public class EditEventController : EventScreenController
     {
-        public AddEventController(DateTime eventStart)
+        public EditEventController(CalendarEvent eventToEdit)
         {
-            _event = new CalendarEvent("", "", eventStart, eventStart.AddHours(3));
+            _event = eventToEdit;
         }
         
 
@@ -20,23 +20,29 @@ namespace TheTabulator
         /// </summary>
         public override void Action()
         {
-            CalendarController.AddEvent(_event);
+
+            //CalendarController.AddEvent(_newEvent);
         }
+
 
 
         public override void RunWindow()
         {
-            EventScreen eventScreen = new EventScreen(this, "Add Event");
+            EventScreen eventScreen = new EventScreen(this, "Edit Event");
             eventScreen.InitialiseInputFields(_event.Name, _event.StartTime.ToShortTimeString(), _event.EndTime.ToShortTimeString(), _event.StartTime.ToShortDateString());
             eventScreen.ShowDialog();
 
         }
 
+
+
+        /*
+
         public System.Drawing.Color EventColor
         {
             set
             {
-                _event.Color = value;
+                _newEvent.Color = value;
             }
         }
 
@@ -44,7 +50,7 @@ namespace TheTabulator
         {
             set
             {
-                _event.Name = value;
+                _newEvent.Name = value;
             }
         }
 
@@ -52,7 +58,7 @@ namespace TheTabulator
         {
             set
             {
-                _event.Location = value;
+                _newEvent.Location = value;
             }
         }
 
@@ -60,7 +66,7 @@ namespace TheTabulator
         {
             get
             {
-                return _event.StartTime.ToShortTimeString();
+                return _newEvent.StartTime.ToShortTimeString();
             }
 
             set
@@ -79,7 +85,7 @@ namespace TheTabulator
         {
             get
             {
-                return _event.EndTime.ToShortTimeString();
+                return _newEvent.EndTime.ToShortTimeString();
             }
             set
             {
@@ -94,8 +100,9 @@ namespace TheTabulator
         {
             get
             {
-                return _event.StartTime.ToLongDateString();
+                return _newEvent.StartTime.ToLongDateString();
             }
         }
+        */
     }
 }
