@@ -1,8 +1,10 @@
 language: csharp
 solution: TheTabulator/DotnetCOREClasses/DotnetCOREClasses.sln
+mono: latest
 install:
   - nuget restore TheTabulator/DotnetCOREClasses/DotnetCOREClasses.sln
   - nuget install NUnit.Console -Version 3.9.0 -OutputDirectory testrunner
 script:
   - msbuild /p:Configuration=Release TheTabulator/DotnetCOREClasses/DotnetCOREClasses.sln
-#  - mono ./testrunner/NUnit.ConsoleRunner.3.9.0/tools/nunit3-console.exe ./TheTabulator/DotnetCOREClasses/DotnetCOREClassesTests/bin/Release/netcoreapp2.1/DotnetCOREClassesTests.dll
+after_script:
+  - mono ./testrunner/NUnit.ConsoleRunner.3.9.0/tools/nunit3-console.exe ./TheTabulator/DotnetCOREClasses/DotnetCOREClassesTests/bin/Release/netcoreapp2.1/DotnetCOREClassesTests.dll
