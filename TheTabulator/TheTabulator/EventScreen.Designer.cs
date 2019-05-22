@@ -116,15 +116,15 @@
             // 
             // eventButton
             // 
-            this.newEventButton.Font = new System.Drawing.Font("Century Gothic", 8.25F);
-            this.newEventButton.Location = new System.Drawing.Point(152, 190);
-            this.newEventButton.Margin = new System.Windows.Forms.Padding(2);
-            this.newEventButton.Name = "newEventButton";
-            this.newEventButton.Size = new System.Drawing.Size(75, 23);
-            this.newEventButton.TabIndex = 5;
-            this.newEventButton.Text = "Add Event";
-            this.newEventButton.UseVisualStyleBackColor = true;
-            this.newEventButton.Click += new System.EventHandler(this.NewEventButton_Click);
+            this.eventButton.Font = new System.Drawing.Font("Century Gothic", 8.25F);
+            this.eventButton.Location = new System.Drawing.Point(152, 190);
+            this.eventButton.Margin = new System.Windows.Forms.Padding(2);
+            this.eventButton.Name = "newEventButton";
+            this.eventButton.Size = new System.Drawing.Size(75, 23);
+            this.eventButton.TabIndex = 5;
+            this.eventButton.Text = "Add Event";
+            this.eventButton.UseVisualStyleBackColor = true;
+            this.eventButton.Click += new System.EventHandler(this.NewEventButton_Click);
             // 
             // locationLabel
             // 
@@ -176,7 +176,7 @@
             // 
             // EventScreen
             // 
-            this.AcceptButton = this.newEventButton;
+            this.AcceptButton = this.eventButton;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
