@@ -22,19 +22,19 @@ namespace TheTabulator
             //Setting the vertical scroll to start 50% down to show the more relevant times people like
             calendarTable.VerticalScroll.Value = 50;
 
-            UpdateCalendar();
+            Refresh();
         }
 
         private void NextWeekButton_Click(object sender, EventArgs e)
         {
             CalendarController.NextWeek();
-            UpdateCalendar();
+            Refresh();
         }
 
         private void PreviousWeekButton_Click(object sender, EventArgs e)
         {
             CalendarController.PreviousWeek();
-            UpdateCalendar();
+            Refresh();
         }
 
         private void CalendarTable_MouseClick(object sender, MouseEventArgs e)
@@ -49,7 +49,7 @@ namespace TheTabulator
             if (calendarTable.GetControlFromPosition(colIndex, rowIndex) == null)
             {
                 CalendarController.NewEventRequest(colIndex, rowIndex);
-                UpdateCalendar();
+                Refresh();
             }
             else
                 MessageBox.Show("Spot taken");
@@ -92,7 +92,7 @@ namespace TheTabulator
 
 
 
-        private void UpdateCalendar()
+        public override void Refresh()
         {
             ClearHighlight();
             UpdateDateLabels();

@@ -16,12 +16,12 @@ namespace TheTabulator
         
 
         /// <summary>
-        /// Controller adds its event to the CalendarController's event list
+        /// 
         /// </summary>
         public override void Action()
         {
-
-            //CalendarController.AddEvent(_newEvent);
+            //Refreshes the parent component of the calendar (ie, the entire Calendar.cs component)
+            _event.Label.Parent.Parent.Refresh();
         }
 
 
@@ -29,9 +29,8 @@ namespace TheTabulator
         public override void RunWindow()
         {
             EventScreen eventScreen = new EventScreen(this, "Edit Event");
-            eventScreen.InitialiseInputFields(_event.Name, _event.StartTime.ToShortTimeString(), _event.EndTime.ToShortTimeString(), _event.StartTime.ToShortDateString());
+            eventScreen.InitialiseInputFields(_event.Name, _event.StartTime.ToShortTimeString(), _event.EndTime.ToShortTimeString(), _event.StartTime.ToShortDateString(), _event.Location);
             eventScreen.ShowDialog();
-
         }
 
 

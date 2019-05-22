@@ -152,7 +152,7 @@
             this.colorInput.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.colorInput.Click += new System.EventHandler(this.ColorInput_Click);
             // 
-            // AddEventScreen
+            // EventScreen
             // 
             this.AcceptButton = this.newEventButton;
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -170,8 +170,9 @@
             this.Controls.Add(this.endTimeLabel);
             this.Controls.Add(this.startTimeLabel);
             this.Controls.Add(this.eventNameLabel);
-            this.Name = "AddEventScreen";
-            this.Text = "AddEventScreen";
+            this.Name = "EventScreen";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.Text = "EventScreen";
             this.Load += new System.EventHandler(this.AddEventScreen_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

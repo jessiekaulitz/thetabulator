@@ -27,7 +27,7 @@ namespace TheTabulator
         public override void RunWindow()
         {
             EventScreen eventScreen = new EventScreen(this, "Add Event");
-            eventScreen.InitialiseInputFields(_event.Name, _event.StartTime.ToShortTimeString(), _event.EndTime.ToShortTimeString(), _event.StartTime.ToShortDateString());
+            eventScreen.InitialiseInputFields(_event.Name, _event.StartTime.ToShortTimeString(), _event.EndTime.ToShortTimeString(), _event.StartTime.ToShortDateString(), _event.Location);
             eventScreen.ShowDialog();
 
         }

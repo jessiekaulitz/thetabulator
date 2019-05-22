@@ -17,9 +17,6 @@ namespace TheTabulator
         {
             _controller = controller;
             InitializeComponent();
-
-            StartPosition = FormStartPosition.CenterParent;
-
             newEventButton.Text = buttonName;
         }
 
@@ -30,13 +27,14 @@ namespace TheTabulator
 
         }
 
-        public void InitialiseInputFields(string name, string startTime, string endTime, string date)
+        public void InitialiseInputFields(string name, string startTime, string endTime, string date, string location)
         {
-            colorDialog.Color = CalendarEvent.DEFAULT_COLOR;
-            colorInput.Text = colorDialog.Color.Name;
+            nameInput.Text = name;
             startTimeInput.Text = startTime;
             endTimeInput.Text = endTime;
-
+            colorDialog.Color = CalendarEvent.DEFAULT_COLOR;
+            colorInput.Text = colorDialog.Color.Name;
+            locationInput.Text = location;
             eventDateLabel.Text += date;
         }
 
