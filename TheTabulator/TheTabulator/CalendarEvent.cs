@@ -24,15 +24,23 @@ namespace TheTabulator
             _startTime = startTime;
             _endTime = endTime;
             _eventLabel = new Label();
+            //Setting default label color and making it fill its container
             _eventLabel.BackColor = DEFAULT_COLOR;
             _eventLabel.Dock = DockStyle.Fill;
+
+            //Dynamically assigning the same event handler for the label of this event to enable
+            //editing of it.
             _eventLabel.MouseClick += new MouseEventHandler(Label_Click);
         }
 
+        /// <summary>
+        /// EventHandler for mouse click on the label of this CalendarEvent
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void Label_Click(object sender, EventArgs e)
         {
-            EditEventController eventScreenController = new EditEventController(this);
-            eventScreenController.RunWindow();
+            CalendarController.EditEventRequest(this);
         }
 
         public void SaveEvent(StreamWriter streamWriter)
@@ -78,6 +86,7 @@ namespace TheTabulator
 
             return rowSpan;
         }
+
 
         public void UpdateLabelText()
         {

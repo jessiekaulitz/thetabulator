@@ -58,9 +58,10 @@ namespace TheTabulator
         }
 
 
-        public static void EditEvent(CalendarEvent eventToEdit)
+        public static void EditEventRequest(CalendarEvent eventToEdit)
         {
-            throw new NotImplementedException();
+            EditEventController eventScreenController = new EditEventController(eventToEdit);
+            eventScreenController.RunWindow();
         }
 
 
@@ -114,8 +115,6 @@ namespace TheTabulator
         {
             //Subtract a week from the current week date (automatically rolls over to previous month/year)
             _weekStartDate = _weekStartDate.Subtract(TimeSpan.FromDays(DAYS_PER_WEEK));
-
-
         }
 
 
