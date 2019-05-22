@@ -605,7 +605,6 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.dateNumbersPanel);
             this.Controls.Add(this.pm9Label);
             this.Controls.Add(this.pm10Label);
             this.Controls.Add(this.pm11Label);
@@ -642,6 +641,7 @@
             this.Controls.Add(this.mondayLabel);
             this.Controls.Add(this.calendarTable);
             this.Controls.Add(this.monthYearLabel);
+            this.Controls.Add(this.dateNumbersPanel);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Calendar";
             this.Size = new System.Drawing.Size(1425, 956);

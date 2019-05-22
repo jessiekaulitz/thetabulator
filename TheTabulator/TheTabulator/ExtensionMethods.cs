@@ -32,15 +32,6 @@ namespace TheTabulator
         }
 
 
-
-        public static void ClearOptimised(this TableLayoutControlCollection cells)
-        {
-            foreach(Label label in cells)
-            {
-                cells.Remove(label);
-            }
-        }
-
         /// <summary>
         /// Returns a string representing the full month name of this date.
         /// </summary>
@@ -52,6 +43,7 @@ namespace TheTabulator
         {
             return dateTime.ToString("MMMM");
         }
+
 
         /// <summary>
         /// Calculates the column (X) index of a cell clicked.
@@ -105,6 +97,7 @@ namespace TheTabulator
             return rowIndex;
         }
 
+
         /// <summary>
         /// Gets the width of an individual column of the TableLayoutPanel.
         /// </summary>
@@ -127,6 +120,7 @@ namespace TheTabulator
             else
                 return Convert.ToInt32(table.ColumnStyles[index].Width);
         }
+        
 
         /// <summary>
         /// Gets the height of an individual row of the TableLayoutPanel.
@@ -149,6 +143,19 @@ namespace TheTabulator
             //Or, if size is not a %, then return the height of this row as is
             else
                 return Convert.ToInt32(table.RowStyles[index].Height);
+        }
+
+        /// <summary>
+        /// Returns the hour component of this DateTime object, with 12am as the '24th' hour.
+        /// </summary>
+        /// <param name="dateTime"></param>
+        /// <returns>
+        /// Integer representing hour if not at 12am
+        /// Otherwise, returns 24 for 12am (aka 0 hour)
+        /// </returns>
+        public static int Hour24(this DateTime dateTime)
+        {
+            return (dateTime.Hour == 0) ? 24 : dateTime.Hour;
         }
     }
 }

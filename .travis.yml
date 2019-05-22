@@ -1,11 +1,8 @@
 language: csharp
-dist: xenial
-solution: "TheTabulator.sln"
-dotnet: 2.1.602
-env:
-  global:
-    - DOTNET_SKIP_FIRST_TIME_EXPERIENCE: 1
-    - DOTNET_CLI_TELEMETRY_OPTOUT: 1
+solution: TheTabulator/DotnetCOREClasses/DotnetCOREClasses.sln
+install:
+  - nuget restore TheTabulator/DotnetCOREClasses/DotnetCOREClasses.sln
+  - nuget install NUnit.Console -Version 3.9.0 -OutputDirectory testrunner
 script:
-  - dotnet restore
-  - dotnet build
+  - msbuild /p:Configuration=Release TheTabulator/DotnetCOREClasses/DotnetCOREClasses.sln
+#  - mono ./testrunner/NUnit.ConsoleRunner.3.9.0/tools/nunit3-console.exe ./TheTabulator/DotnetCOREClasses/DotnetCOREClassesTests/bin/Release/netcoreapp2.1/DotnetCOREClassesTests.dll

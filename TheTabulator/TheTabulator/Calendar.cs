@@ -21,44 +21,43 @@ namespace TheTabulator
         {
             //Setting the vertical scroll to start 50% down to show the more relevant times people like
             calendarTable.VerticalScroll.Value = 50;
-            UpdateCalendar();
-            //calendarTable.Controls.Clear
-            
-            Label label = new Label();
-            label.BackColor = Color.MediumPurple;
-            label.Text = "Event here";
-            label.Dock = DockStyle.Fill;
-            //calendarTable.SetRowSpan(label, 22);
-            calendarTable.Controls.Add(label, 2, 2);
 
-            MessageBox.Show(calendarTable.GetCellPosition(label).ToString());
+            Refresh();
         }
 
         private void NextWeekButton_Click(object sender, EventArgs e)
         {
             CalendarController.NextWeek();
-            UpdateCalendar();
+            Refresh();
         }
 
         private void PreviousWeekButton_Click(object sender, EventArgs e)
         {
             CalendarController.PreviousWeek();
-            UpdateCalendar();
+            Refresh();
         }
 
         private void CalendarTable_MouseClick(object sender, MouseEventArgs e)
         {
             if ((calendarTable.ColumnCount < 1) || (calendarTable.RowCount < 1))
                 throw new Exception("Error: Should not be able to click if no cells in table.");
-            
-            MessageBox.Show("Cell coords are: (" + calendarTable.CellClickedColumnIndex(e.X).ToString() + ", " + calendarTable.CellClickedRowIndex(e.Y).ToString() + ")");
 
+            int colIndex = calendarTable.CellClickedColumnIndex(e.X);
+            int rowIndex = calendarTable.CellClickedRowIndex(e.Y);
 
+            //If there is not already an event in the current cell
+            if (calendarTable.GetControlFromPosition(colIndex, rowIndex) == null)
+            {
+                CalendarController.NewEventRequest(colIndex, rowIndex);
+                Refresh();
+            }
+            else
+                MessageBox.Show("Spot taken");
         }
 
         private void HighlightCurrentDay()
         {
-            if (CalendarController.AtThisWeek())
+            if (CalendarController.IsAtThisWeek())
             {
                 int labelIndex = CalendarController.CurrentDayIndex();
                 dateNumbersPanel.Controls[labelIndex].BackColor = Color.Yellow;
@@ -93,13 +92,15 @@ namespace TheTabulator
 
 
 
-        private void UpdateCalendar()
+        public override void Refresh()
         {
             ClearHighlight();
             UpdateDateLabels();
             UpdateMonthYearLabel();
             HighlightCurrentDay();
-            CalendarController.DrawWeeksEvents(calendarTable.Controls);
+            calendarTable.Visible = false;
+            CalendarController.DrawWeeksEvents(calendarTable);
+            calendarTable.Visible = true;
         }
     }
 }
