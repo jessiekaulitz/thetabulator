@@ -47,12 +47,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="EditEventController.cs" />
     <Compile Include="AddEventController.cs" />
-    <Compile Include="AddEventScreen.cs">
+    <Compile Include="EventScreen.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AddEventScreen.Designer.cs">
-      <DependentUpon>AddEventScreen.cs</DependentUpon>
+    <Compile Include="EventScreen.Designer.cs">
+      <DependentUpon>EventScreen.cs</DependentUpon>
     </Compile>
     <Compile Include="Calendar.cs">
       <SubType>UserControl</SubType>
@@ -62,6 +63,7 @@
     </Compile>
     <Compile Include="CalendarController.cs" />
     <Compile Include="CalendarEvent.cs" />
+    <Compile Include="EventScreenController.cs" />
     <Compile Include="ExtensionMethods.cs" />
     <Compile Include="Main.cs">
       <SubType>Form</SubType>
@@ -84,8 +86,8 @@
     <Compile Include="To-DoList.Designer.cs">
       <DependentUpon>To-DoList.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="AddEventScreen.resx">
-      <DependentUpon>AddEventScreen.cs</DependentUpon>
+    <EmbeddedResource Include="EventScreen.resx">
+      <DependentUpon>EventScreen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Calendar.resx">
       <DependentUpon>Calendar.cs</DependentUpon>
