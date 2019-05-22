@@ -39,7 +39,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(142)))), ((int)(((byte)(169)))), ((int)(((byte)(248)))));
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.txtToDoListName);
             this.panel1.Location = new System.Drawing.Point(-8, -8);
@@ -49,7 +49,7 @@
             // 
             // txtToDoListName
             // 
-            this.txtToDoListName.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.txtToDoListName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(142)))), ((int)(((byte)(169)))), ((int)(((byte)(248)))));
             this.txtToDoListName.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtToDoListName.Font = new System.Drawing.Font("Century Gothic", 26F);
             this.txtToDoListName.Location = new System.Drawing.Point(10, 6);
