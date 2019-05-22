@@ -13,44 +13,56 @@ namespace TheTabulator
     public partial class EventScreen : Form
     {
         private EventScreenController _controller;
-        public EventScreen(EventScreenController controller, string buttonName)
+
+        public EventScreen(EventScreenController controller)
         {
             _controller = controller;
             InitializeComponent();
-            newEventButton.Text = buttonName;
         }
 
-        private void AddEventScreen_Load(object sender, EventArgs e)
+        /// <summary>
+        /// Initialises the textbox inputs with the current values of the event.
+        /// </summary>
+        /// <param name="name"></param>
+        /// <param name="startTime"></param>
+        /// <param name="endTime"></param>
+        /// <param name="date"></param>
+        /// <param name="location"></param>
+        /// <param name="color"></param>
+        public void InitialiseInputFields(string name, string startTime, string endTime, string date, string location, System.Drawing.Color color)
         {
-
-
-
-        }
-
-        public void InitialiseInputFields(string name, string startTime, string endTime, string date, string location)
-        {
+            eventDateLabel.Text += date;
             nameInput.Text = name;
             startTimeInput.Text = startTime;
             endTimeInput.Text = endTime;
-            colorDialog.Color = CalendarEvent.DEFAULT_COLOR;
+            colorDialog.Color = color;
             colorInput.Text = colorDialog.Color.Name;
             locationInput.Text = location;
-            eventDateLabel.Text += date;
         }
 
 
+        /// <summary>
+        /// Enacts the action of the controller when the EventScreen's primary button is pressed.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void NewEventButton_Click(object sender, EventArgs e)
         {
             //Checks that the name is not empty
             if (_controller.ValidateEvent(nameInput.Text, startTimeInput.Text, endTimeInput.Text, locationInput.Text, colorDialog.Color))
             {
-                //Then tells the controller to add its event to the CalendarController's
-                //event list, before closing.
+                //Then tells the controller to do its action (either add the event or update the existing), 
+                //before closing.
                 _controller.Action();
                 Close();
             }
         }
 
+        /// <summary>
+        /// Opens the ColorDialog window when the color textbox is clicked.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void ColorInput_Click(object sender, EventArgs e)
         {
             colorDialog.ShowDialog();
@@ -58,16 +70,15 @@ namespace TheTabulator
             colorInput.Text = colorDialog.Color.Name;
         }
 
-
-
-        private void NameInput_TextChanged(object sender, EventArgs e)
+        /// <summary>
+        /// Sets the text of the primary button of this form.
+        /// </summary>
+        public string ButtonText
         {
-            //_controller.EventName = nameInput.Text;
-        }
-
-        private void LocationInput_TextChanged(object sender, EventArgs e)
-        {
-            //_controller.EventLocation = locationInput.Text;
+            set
+            {
+                eventButton.Text = value;
+            }
         }
     }
 }

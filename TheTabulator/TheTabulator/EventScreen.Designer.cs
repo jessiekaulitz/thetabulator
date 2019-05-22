@@ -35,7 +35,7 @@
             this.nameInput = new System.Windows.Forms.TextBox();
             this.startTimeInput = new System.Windows.Forms.TextBox();
             this.endTimeInput = new System.Windows.Forms.TextBox();
-            this.newEventButton = new System.Windows.Forms.Button();
+            this.eventButton = new System.Windows.Forms.Button();
             this.locationLabel = new System.Windows.Forms.Label();
             this.locationInput = new System.Windows.Forms.TextBox();
             this.colorDialog = new System.Windows.Forms.ColorDialog();
@@ -85,7 +85,6 @@
             this.nameInput.Name = "nameInput";
             this.nameInput.Size = new System.Drawing.Size(100, 22);
             this.nameInput.TabIndex = 0;
-            this.nameInput.TextChanged += new System.EventHandler(this.NameInput_TextChanged);
             // 
             // startTimeInput
             // 
@@ -101,15 +100,15 @@
             this.endTimeInput.Size = new System.Drawing.Size(100, 22);
             this.endTimeInput.TabIndex = 2;
             // 
-            // newEventButton
+            // eventButton
             // 
-            this.newEventButton.Location = new System.Drawing.Point(203, 234);
-            this.newEventButton.Name = "newEventButton";
-            this.newEventButton.Size = new System.Drawing.Size(100, 23);
-            this.newEventButton.TabIndex = 5;
-            this.newEventButton.Text = "Add Event";
-            this.newEventButton.UseVisualStyleBackColor = true;
-            this.newEventButton.Click += new System.EventHandler(this.NewEventButton_Click);
+            this.eventButton.Location = new System.Drawing.Point(203, 234);
+            this.eventButton.Name = "eventButton";
+            this.eventButton.Size = new System.Drawing.Size(100, 23);
+            this.eventButton.TabIndex = 5;
+            this.eventButton.Text = "Button";
+            this.eventButton.UseVisualStyleBackColor = true;
+            this.eventButton.Click += new System.EventHandler(this.NewEventButton_Click);
             // 
             // locationLabel
             // 
@@ -126,7 +125,6 @@
             this.locationInput.Name = "locationInput";
             this.locationInput.Size = new System.Drawing.Size(100, 22);
             this.locationInput.TabIndex = 3;
-            this.locationInput.TextChanged += new System.EventHandler(this.LocationInput_TextChanged);
             // 
             // colorDialog
             // 
@@ -154,7 +152,7 @@
             // 
             // EventScreen
             // 
-            this.AcceptButton = this.newEventButton;
+            this.AcceptButton = this.eventButton;
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(407, 287);
@@ -162,7 +160,7 @@
             this.Controls.Add(this.colorLabel);
             this.Controls.Add(this.locationInput);
             this.Controls.Add(this.locationLabel);
-            this.Controls.Add(this.newEventButton);
+            this.Controls.Add(this.eventButton);
             this.Controls.Add(this.endTimeInput);
             this.Controls.Add(this.startTimeInput);
             this.Controls.Add(this.nameInput);
@@ -173,7 +171,6 @@
             this.Name = "EventScreen";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "EventScreen";
-            this.Load += new System.EventHandler(this.AddEventScreen_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -188,7 +185,7 @@
         private System.Windows.Forms.TextBox nameInput;
         private System.Windows.Forms.TextBox startTimeInput;
         private System.Windows.Forms.TextBox endTimeInput;
-        private System.Windows.Forms.Button newEventButton;
+        private System.Windows.Forms.Button eventButton;
         private System.Windows.Forms.Label locationLabel;
         private System.Windows.Forms.TextBox locationInput;
         private System.Windows.Forms.ColorDialog colorDialog;

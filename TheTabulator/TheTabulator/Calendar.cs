@@ -37,6 +37,11 @@ namespace TheTabulator
             Refresh();
         }
 
+        /// <summary>
+        /// When table is clicked new event can be added.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void CalendarTable_MouseClick(object sender, MouseEventArgs e)
         {
             if ((calendarTable.ColumnCount < 1) || (calendarTable.RowCount < 1))
@@ -52,9 +57,14 @@ namespace TheTabulator
                 Refresh();
             }
             else
+                //Event editing is done only when the label itself is clicked, not the empty
+                //space around the label.
                 MessageBox.Show("Spot taken");
         }
 
+        /// <summary>
+        /// Highlights the label for the current day of the week, if in the current week
+        /// </summary>
         private void HighlightCurrentDay()
         {
             if (CalendarController.IsAtThisWeek())
@@ -64,12 +74,18 @@ namespace TheTabulator
             }
         }
 
+        /// <summary>
+        /// Clears the highlight by changing the label color back to the default
+        /// </summary>
         private void ClearHighlight()
         {
             int labelIndex = CalendarController.CurrentDayIndex();
             dateNumbersPanel.Controls[labelIndex].BackColor = SystemColors.Control;
         }
 
+        /// <summary>
+        /// Updates the month and year label of the calendar
+        /// </summary>
         private void UpdateMonthYearLabel()
         {
             monthYearLabel.Text = CalendarController.MonthString
@@ -79,6 +95,9 @@ namespace TheTabulator
 
 
 
+        /// <summary>
+        /// Updates all date labels of the calendar for the current calendar week
+        /// </summary>
         private void UpdateDateLabels()
         {
             DayOfWeek dayOfWeek = DayOfWeek.Monday;
@@ -92,6 +111,10 @@ namespace TheTabulator
 
 
 
+        /// <summary>
+        /// Refreshes the calendar TableLayoutPanel with new date, month, and year labels
+        /// and events are drawn for the current calendar week.
+        /// </summary>
         public override void Refresh()
         {
             ClearHighlight();
