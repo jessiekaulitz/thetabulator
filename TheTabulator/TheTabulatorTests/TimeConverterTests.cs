@@ -1,15 +1,17 @@
-﻿using NUnit.Framework;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using TheTabulator;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DotnetCOREClasses.Tests
+namespace TheTabulator.Tests
 {
+    [TestClass()]
     public class TimeConverterTests
     {
-        [Test()]
+        [TestMethod()]
         public void ConvertTimeTest()  //Testing input to time converter
         {
             string time = "12:03";
@@ -20,7 +22,7 @@ namespace DotnetCOREClasses.Tests
             Assert.AreEqual(expected, actual);
         }
 
-        [Test()]
+        [TestMethod()]
         public void NullTest()  //Testing a null input
         {
             string time = "";
@@ -30,7 +32,7 @@ namespace DotnetCOREClasses.Tests
             Assert.IsNull(actual);
         }
 
-        [Test()]
+        [TestMethod()]
         public void TestFormat()  //Testing input to time converter
         {
             string time = "303";
@@ -41,7 +43,7 @@ namespace DotnetCOREClasses.Tests
             Assert.AreEqual(expected, actual);
         }
 
-        [Test()]
+        [TestMethod()]
         public void TestFormat2()  //Testing 24 hour times converting to 12 hour times
         {
             string time = "13:44";
@@ -52,7 +54,7 @@ namespace DotnetCOREClasses.Tests
             Assert.AreEqual(expected, actual);
         }
 
-        [Test()]
+        [TestMethod()]
         public void TestFormat3()  //Testing input of words instead of times
         {
             string time = "word";
@@ -64,19 +66,3 @@ namespace DotnetCOREClasses.Tests
         }
     }
 }
-
-/*using System;
-using NUnit.Framework;
-
-namespace DotnetCOREClasses.Tests
-{
-    public class TimeConverterTests
-    {
-        [Test()]
-        public static void Test1Name()
-        {
-            TimeConverter.ConvertTime("10:30");
-            Assert.Pass();
-        }
-    }
-}*/
