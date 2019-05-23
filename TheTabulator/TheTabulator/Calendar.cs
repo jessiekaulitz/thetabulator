@@ -80,7 +80,7 @@ namespace TheTabulator
         private void ClearHighlight()
         {
             int labelIndex = CalendarController.CurrentDayIndex();
-            dateNumbersPanel.Controls[labelIndex].BackColor = SystemColors.Control;
+            dateNumbersPanel.Controls[labelIndex].BackColor = Color.White;
         }
 
         /// <summary>
