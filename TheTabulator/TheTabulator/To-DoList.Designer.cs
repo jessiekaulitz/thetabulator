@@ -32,24 +32,24 @@
             this.pnlMainToDoList.Controls.Add(this.lstTasks);
             this.pnlMainToDoList.Controls.Add(this.txtTaskDescription);
             this.pnlMainToDoList.Controls.Add(this.btnAdd);
-            this.pnlMainToDoList.Location = new System.Drawing.Point(0, 0);
+            this.pnlMainToDoList.Location = new System.Drawing.Point(0, 1);
             this.pnlMainToDoList.Name = "pnlMainToDoList";
             this.pnlMainToDoList.Size = new System.Drawing.Size(333, 606);
             this.pnlMainToDoList.TabIndex = 0;
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(142)))), ((int)(((byte)(169)))), ((int)(((byte)(248)))));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(253)))), ((int)(((byte)(200)))));
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.txtToDoListName);
-            this.panel1.Location = new System.Drawing.Point(-8, -8);
+            this.panel1.Location = new System.Drawing.Point(-8, -7);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(349, 52);
             this.panel1.TabIndex = 0;
             // 
             // txtToDoListName
             // 
-            this.txtToDoListName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(142)))), ((int)(((byte)(169)))), ((int)(((byte)(248)))));
+            this.txtToDoListName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(253)))), ((int)(((byte)(200)))));
             this.txtToDoListName.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtToDoListName.Font = new System.Drawing.Font("Century Gothic", 26F);
             this.txtToDoListName.Location = new System.Drawing.Point(10, 6);
@@ -62,7 +62,7 @@
             // btnDelete
             // 
             this.btnDelete.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDelete.Location = new System.Drawing.Point(266, 206);
+            this.btnDelete.Location = new System.Drawing.Point(266, 207);
             this.btnDelete.Margin = new System.Windows.Forms.Padding(0);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(61, 47);
@@ -74,7 +74,7 @@
             // btnMoveTaskDown
             // 
             this.btnMoveTaskDown.Font = new System.Drawing.Font("Century Gothic", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMoveTaskDown.Location = new System.Drawing.Point(266, 384);
+            this.btnMoveTaskDown.Location = new System.Drawing.Point(266, 385);
             this.btnMoveTaskDown.Margin = new System.Windows.Forms.Padding(0);
             this.btnMoveTaskDown.Name = "btnMoveTaskDown";
             this.btnMoveTaskDown.Size = new System.Drawing.Size(61, 47);
@@ -86,7 +86,7 @@
             // btnMoveTaskUp
             // 
             this.btnMoveTaskUp.Font = new System.Drawing.Font("Century Gothic", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMoveTaskUp.Location = new System.Drawing.Point(266, 320);
+            this.btnMoveTaskUp.Location = new System.Drawing.Point(266, 321);
             this.btnMoveTaskUp.Margin = new System.Windows.Forms.Padding(0);
             this.btnMoveTaskUp.Name = "btnMoveTaskUp";
             this.btnMoveTaskUp.Size = new System.Drawing.Size(61, 47);
@@ -98,7 +98,7 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(266, 142);
+            this.button1.Location = new System.Drawing.Point(266, 143);
             this.button1.Margin = new System.Windows.Forms.Padding(0);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(61, 47);
@@ -117,7 +117,7 @@
             this.lstTasks.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.None;
             this.lstTasks.LabelEdit = true;
             this.lstTasks.LabelWrap = false;
-            this.lstTasks.Location = new System.Drawing.Point(3, 93);
+            this.lstTasks.Location = new System.Drawing.Point(3, 94);
             this.lstTasks.Name = "lstTasks";
             this.lstTasks.Size = new System.Drawing.Size(260, 508);
             this.lstTasks.SmallImageList = this.imageListSmall;
@@ -140,7 +140,7 @@
             // 
             this.txtTaskDescription.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtTaskDescription.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTaskDescription.Location = new System.Drawing.Point(3, 58);
+            this.txtTaskDescription.Location = new System.Drawing.Point(3, 59);
             this.txtTaskDescription.Name = "txtTaskDescription";
             this.txtTaskDescription.Size = new System.Drawing.Size(260, 24);
             this.txtTaskDescription.TabIndex = 2;
@@ -151,7 +151,7 @@
             // btnAdd
             // 
             this.btnAdd.Font = new System.Drawing.Font("Tahoma", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdd.Location = new System.Drawing.Point(266, 47);
+            this.btnAdd.Location = new System.Drawing.Point(266, 48);
             this.btnAdd.Margin = new System.Windows.Forms.Padding(0);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(61, 47);

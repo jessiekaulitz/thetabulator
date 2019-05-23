@@ -28,9 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.multipleTo_DoLists1 = new TheTabulator.MultipleTo_DoLists();
             this.calendar1 = new TheTabulator.Calendar();
+            this.multipleTo_DoLists1 = new TheTabulator.MultipleTo_DoLists();
             this.SuspendLayout();
+            // 
+            // calendar1
+            // 
+            this.calendar1.BackColor = System.Drawing.Color.White;
+            this.calendar1.Location = new System.Drawing.Point(337, -1);
+            this.calendar1.Name = "calendar1";
+            this.calendar1.Size = new System.Drawing.Size(943, 650);
+            this.calendar1.TabIndex = 3;
             // 
             // multipleTo_DoLists1
             // 
@@ -41,22 +49,14 @@
             this.multipleTo_DoLists1.Size = new System.Drawing.Size(337, 650);
             this.multipleTo_DoLists1.TabIndex = 4;
             // 
-            // calendar1
-            // 
-            this.calendar1.BackColor = System.Drawing.Color.White;
-            this.calendar1.Location = new System.Drawing.Point(336, -1);
-            this.calendar1.Name = "calendar1";
-            this.calendar1.Size = new System.Drawing.Size(950, 652);
-            this.calendar1.TabIndex = 5;
-            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1284, 648);
-            this.Controls.Add(this.calendar1);
             this.Controls.Add(this.multipleTo_DoLists1);
+            this.Controls.Add(this.calendar1);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Main";
             this.Text = "Main";
@@ -65,7 +65,7 @@
         }
 
         #endregion
-        private MultipleTo_DoLists multipleTo_DoLists1;
         private Calendar calendar1;
+        private MultipleTo_DoLists multipleTo_DoLists1;
     }
 }
