@@ -167,7 +167,7 @@
             this.wednesdayLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.wednesdayLabel.AutoSize = true;
             this.wednesdayLabel.Font = new System.Drawing.Font("Century Gothic", 14F);
-            this.wednesdayLabel.Location = new System.Drawing.Point(307, 73);
+            this.wednesdayLabel.Location = new System.Drawing.Point(302, 73);
             this.wednesdayLabel.Name = "wednesdayLabel";
             this.wednesdayLabel.Size = new System.Drawing.Size(120, 22);
             this.wednesdayLabel.TabIndex = 34;
@@ -180,7 +180,7 @@
             this.thursdayLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.thursdayLabel.AutoSize = true;
             this.thursdayLabel.Font = new System.Drawing.Font("Century Gothic", 14F);
-            this.thursdayLabel.Location = new System.Drawing.Point(448, 73);
+            this.thursdayLabel.Location = new System.Drawing.Point(441, 73);
             this.thursdayLabel.Name = "thursdayLabel";
             this.thursdayLabel.Size = new System.Drawing.Size(92, 22);
             this.thursdayLabel.TabIndex = 34;
@@ -219,7 +219,7 @@
             this.saturdayLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.saturdayLabel.AutoSize = true;
             this.saturdayLabel.Font = new System.Drawing.Font("Century Gothic", 14F);
-            this.saturdayLabel.Location = new System.Drawing.Point(696, 73);
+            this.saturdayLabel.Location = new System.Drawing.Point(692, 73);
             this.saturdayLabel.Name = "saturdayLabel";
             this.saturdayLabel.Size = new System.Drawing.Size(94, 22);
             this.saturdayLabel.TabIndex = 34;
@@ -574,6 +574,7 @@
             // thursdayDateLabel
             // 
             this.thursdayDateLabel.AutoSize = true;
+            this.thursdayDateLabel.Cursor = System.Windows.Forms.Cursors.Default;
             this.thursdayDateLabel.Font = new System.Drawing.Font("Century Gothic", 14F);
             this.thursdayDateLabel.Location = new System.Drawing.Point(431, 0);
             this.thursdayDateLabel.Name = "thursdayDateLabel";
@@ -613,7 +614,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(142)))), ((int)(((byte)(169)))), ((int)(((byte)(248)))));
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.previousWeekButton);
             this.panel1.Controls.Add(this.monthYearLabel);
