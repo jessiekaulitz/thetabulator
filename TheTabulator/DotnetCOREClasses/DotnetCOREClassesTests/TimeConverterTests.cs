@@ -63,31 +63,7 @@ namespace DotnetCOREClasses.Tests
             Assert.AreEqual(expected, actual);
         }
         
-        [TestMethod()]
-        public void TestFormat4() //testing invalid time format 
-        {
-            string time = "2500";
-
-            TimeSpan expected = new TimeSpan(00, 00, 00);
-
-            TimeSpan actual = TimeConverterTests.ConvertTime(time);
-
-            Assert.AreEqual(expected, actual);
-
-        }
-
-        [TestMethod()]
-        public void TestFormat5() //testing invalid time extra input
-        {
-            string time = "13505555";
-
-            TimeSpan expected = new TimeSpan(00, 00, 00);
-
-            TimeSpan actual = TimeConverterTests.ConvertTime(time);
-
-            Assert.AreEqual(expected, actual);
-
-        }
+      
     }
 }
 
