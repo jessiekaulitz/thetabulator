@@ -6,9 +6,27 @@ namespace DotnetCOREClasses
     {
         public static TimeSpan ConvertTime(string time)
         {
-            Console.WriteLine("Hello World!");
+            int length = time.Length;
+            TimeSpan convertedTime;
+            
+            if(length > 2)
+            {
+                if(time[length - 3] != ':')
+                {
+                    time = time.Insert(length - 2, ":");
+                }
+            }
 
-            return default(TimeSpan);
+            try
+            {
+                convertedTime = TimeSpan.Parse(time);
+            }
+            catch
+            {
+                convertedTime = TimeSpan.Zero;
+            }
+
+            return convertedTime;
         }
     }
 }
