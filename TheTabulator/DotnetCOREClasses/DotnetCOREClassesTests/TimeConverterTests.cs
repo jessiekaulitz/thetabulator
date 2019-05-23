@@ -25,9 +25,11 @@ namespace DotnetCOREClasses.Tests
         {
             string time = "";
 
+            TimeSpan expected = new TimeSpan(00, 00, 00);
+
             TimeSpan actual = TimeConverter.ConvertTime(time);
 
-            Assert.IsNull(actual);
+            Assert.AreEqual(expected, actual);
         }
 
         [Test()]
@@ -45,7 +47,7 @@ namespace DotnetCOREClasses.Tests
         public void TestFormat2()  //Testing 24 hour times converting to 12 hour times
         {
             string time = "13:44";
-            TimeSpan expected = new TimeSpan(01, 44, 00);
+            TimeSpan expected = new TimeSpan(13, 44, 00);
 
             TimeSpan actual = TimeConverter.ConvertTime(time);
 
@@ -62,6 +64,8 @@ namespace DotnetCOREClasses.Tests
 
             Assert.AreEqual(expected, actual);
         }
+        
+      
     }
 }
 
