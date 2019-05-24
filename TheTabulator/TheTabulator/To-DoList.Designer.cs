@@ -23,7 +23,7 @@
             // 
             // pnlMainToDoList
             // 
-            this.pnlMainToDoList.BackColor = System.Drawing.Color.White;
+            this.pnlMainToDoList.BackColor = System.Drawing.Color.WhiteSmoke;
             this.pnlMainToDoList.Controls.Add(this.panel1);
             this.pnlMainToDoList.Controls.Add(this.btnDelete);
             this.pnlMainToDoList.Controls.Add(this.btnMoveTaskDown);
@@ -32,14 +32,14 @@
             this.pnlMainToDoList.Controls.Add(this.lstTasks);
             this.pnlMainToDoList.Controls.Add(this.txtTaskDescription);
             this.pnlMainToDoList.Controls.Add(this.btnAdd);
-            this.pnlMainToDoList.Location = new System.Drawing.Point(0, 1);
+            this.pnlMainToDoList.Location = new System.Drawing.Point(0, 0);
             this.pnlMainToDoList.Name = "pnlMainToDoList";
-            this.pnlMainToDoList.Size = new System.Drawing.Size(333, 606);
+            this.pnlMainToDoList.Size = new System.Drawing.Size(333, 675);
             this.pnlMainToDoList.TabIndex = 0;
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(253)))), ((int)(((byte)(200)))));
+            this.panel1.BackColor = System.Drawing.Color.Plum;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.txtToDoListName);
             this.panel1.Location = new System.Drawing.Point(-8, -7);
@@ -49,14 +49,15 @@
             // 
             // txtToDoListName
             // 
-            this.txtToDoListName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(253)))), ((int)(((byte)(200)))));
+            this.txtToDoListName.BackColor = System.Drawing.Color.Plum;
             this.txtToDoListName.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtToDoListName.Font = new System.Drawing.Font("Century Gothic", 26F);
-            this.txtToDoListName.Location = new System.Drawing.Point(10, 6);
+            this.txtToDoListName.Font = new System.Drawing.Font("Segoe Script", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtToDoListName.Location = new System.Drawing.Point(7, 1);
             this.txtToDoListName.Name = "txtToDoListName";
-            this.txtToDoListName.Size = new System.Drawing.Size(280, 43);
+            this.txtToDoListName.Size = new System.Drawing.Size(334, 56);
             this.txtToDoListName.TabIndex = 0;
             this.txtToDoListName.Text = "Untitled";
+            this.txtToDoListName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtToDoListName.Click += new System.EventHandler(this.TxtToDoListName_Click);
             // 
             // btnDelete
@@ -117,9 +118,9 @@
             this.lstTasks.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.None;
             this.lstTasks.LabelEdit = true;
             this.lstTasks.LabelWrap = false;
-            this.lstTasks.Location = new System.Drawing.Point(3, 94);
+            this.lstTasks.Location = new System.Drawing.Point(11, 94);
             this.lstTasks.Name = "lstTasks";
-            this.lstTasks.Size = new System.Drawing.Size(260, 508);
+            this.lstTasks.Size = new System.Drawing.Size(249, 508);
             this.lstTasks.SmallImageList = this.imageListSmall;
             this.lstTasks.TabIndex = 3;
             this.lstTasks.UseCompatibleStateImageBehavior = false;
@@ -138,11 +139,12 @@
             // 
             // txtTaskDescription
             // 
+            this.txtTaskDescription.BackColor = System.Drawing.Color.WhiteSmoke;
             this.txtTaskDescription.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtTaskDescription.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTaskDescription.Location = new System.Drawing.Point(3, 59);
+            this.txtTaskDescription.Location = new System.Drawing.Point(11, 59);
             this.txtTaskDescription.Name = "txtTaskDescription";
-            this.txtTaskDescription.Size = new System.Drawing.Size(260, 24);
+            this.txtTaskDescription.Size = new System.Drawing.Size(249, 24);
             this.txtTaskDescription.TabIndex = 2;
             this.txtTaskDescription.Text = "Task Description";
             this.txtTaskDescription.Click += new System.EventHandler(this.TxtTaskDescription_Click);
@@ -150,21 +152,22 @@
             // 
             // btnAdd
             // 
-            this.btnAdd.Font = new System.Drawing.Font("Tahoma", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdd.Location = new System.Drawing.Point(266, 48);
+            this.btnAdd.BackColor = System.Drawing.Color.Transparent;
+            this.btnAdd.Font = new System.Drawing.Font("Tahoma", 14F);
+            this.btnAdd.Location = new System.Drawing.Point(275, 53);
             this.btnAdd.Margin = new System.Windows.Forms.Padding(0);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(61, 47);
+            this.btnAdd.Size = new System.Drawing.Size(42, 36);
             this.btnAdd.TabIndex = 1;
             this.btnAdd.Text = "+";
-            this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.UseVisualStyleBackColor = false;
             this.btnAdd.Click += new System.EventHandler(this.BtnAdd_Click);
             // 
             // To_DoList
             // 
             this.Controls.Add(this.pnlMainToDoList);
             this.Name = "To_DoList";
-            this.Size = new System.Drawing.Size(334, 606);
+            this.Size = new System.Drawing.Size(334, 692);
             this.pnlMainToDoList.ResumeLayout(false);
             this.pnlMainToDoList.PerformLayout();
             this.panel1.ResumeLayout(false);

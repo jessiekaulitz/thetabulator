@@ -83,10 +83,10 @@
             // monthYearLabel
             // 
             this.monthYearLabel.AutoSize = true;
-            this.monthYearLabel.Font = new System.Drawing.Font("Century Gothic", 26F);
-            this.monthYearLabel.Location = new System.Drawing.Point(174, 29);
+            this.monthYearLabel.Font = new System.Drawing.Font("Segoe Script", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.monthYearLabel.Location = new System.Drawing.Point(173, 23);
             this.monthYearLabel.Name = "monthYearLabel";
-            this.monthYearLabel.Size = new System.Drawing.Size(241, 42);
+            this.monthYearLabel.Size = new System.Drawing.Size(298, 55);
             this.monthYearLabel.TabIndex = 1;
             this.monthYearLabel.Text = "January 2019";
             // 
@@ -228,6 +228,8 @@
             // 
             // nextWeekButton
             // 
+            this.nextWeekButton.BackColor = System.Drawing.Color.Transparent;
+            this.nextWeekButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.nextWeekButton.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nextWeekButton.Location = new System.Drawing.Point(116, 35);
             this.nextWeekButton.Margin = new System.Windows.Forms.Padding(2);
@@ -235,11 +237,13 @@
             this.nextWeekButton.Size = new System.Drawing.Size(52, 32);
             this.nextWeekButton.TabIndex = 48;
             this.nextWeekButton.Text = ">";
-            this.nextWeekButton.UseVisualStyleBackColor = true;
+            this.nextWeekButton.UseVisualStyleBackColor = false;
             this.nextWeekButton.Click += new System.EventHandler(this.NextWeekButton_Click);
             // 
             // previousWeekButton
             // 
+            this.previousWeekButton.BackColor = System.Drawing.Color.Transparent;
+            this.previousWeekButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.previousWeekButton.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.previousWeekButton.Location = new System.Drawing.Point(50, 35);
             this.previousWeekButton.Margin = new System.Windows.Forms.Padding(2);
@@ -247,7 +251,7 @@
             this.previousWeekButton.Size = new System.Drawing.Size(52, 32);
             this.previousWeekButton.TabIndex = 49;
             this.previousWeekButton.Text = "<";
-            this.previousWeekButton.UseVisualStyleBackColor = true;
+            this.previousWeekButton.UseVisualStyleBackColor = false;
             this.previousWeekButton.Click += new System.EventHandler(this.PreviousWeekButton_Click);
             // 
             // am12Label
@@ -613,7 +617,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(253)))), ((int)(((byte)(200)))));
+            this.panel1.BackColor = System.Drawing.Color.Plum;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.previousWeekButton);
             this.panel1.Controls.Add(this.monthYearLabel);
@@ -631,7 +635,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
+            this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.Controls.Add(this.mondayLabel);
             this.Controls.Add(this.sundayLabel);
             this.Controls.Add(this.tuesdayLabel);
