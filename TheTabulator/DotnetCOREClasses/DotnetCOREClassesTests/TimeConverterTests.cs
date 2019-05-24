@@ -88,5 +88,28 @@ namespace DotnetCOREClasses.Tests
 
             Assert.AreEqual(expected, actual);
         }
+
+
+        [Test()]
+        public void TestAMInTime()  //Testing input to time converter
+        {
+            string time = "7:03 AM";
+            TimeSpan expected = new TimeSpan(7, 03, 00);
+
+            TimeSpan actual = TimeConverter.ConvertTime(time);
+
+            Assert.AreEqual(expected, actual);
+        }
+
+        [Test()]
+        public void TestPMInTime()  //Testing input to time converter
+        {
+            string time = "12:03 PM";
+            TimeSpan expected = new TimeSpan(12, 03, 00);
+
+            TimeSpan actual = TimeConverter.ConvertTime(time);
+
+            Assert.AreEqual(expected, actual);
+        }
     }
 }
