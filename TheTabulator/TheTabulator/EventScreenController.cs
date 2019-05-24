@@ -49,16 +49,16 @@ namespace TheTabulator
                 successful = false;
             }
             
-            TimeSpan time = TimeConverter.ConvertTime(startTime);
-            if ((time == null) || (time.Hours > 23))
+            TimeSpan startTimeSpan = TimeConverter.ConvertTime(startTime);
+            if ((startTimeSpan == null) || (startTimeSpan.Hours > 23))
             {
                 MessageBox.Show("Start time must be valid and on the same day.");
                 successful = false;
             }
 
-            time = TimeConverter.ConvertTime(endTime);
-            DateTime newEndTime = _event.EndTime.Date.Add(time);
-            if ((time == null) || (newEndTime.Date != _event.StartTime.Date))
+            TimeSpan endTimeSpan = TimeConverter.ConvertTime(endTime);
+            DateTime newEndTime = _event.EndTime.Date.Add(endTimeSpan);
+            if ((endTimeSpan == null) || (newEndTime.Date != _event.StartTime.Date))
             {
                 MessageBox.Show("End time must be valid and on the same day.");
                 successful = false;
@@ -69,7 +69,7 @@ namespace TheTabulator
             if (successful)
             {
                 _event.Name = name;
-                _event.StartTime = _event.StartTime.Date.Add(time);
+                _event.StartTime = _event.StartTime.Date.Add(startTimeSpan);
                 _event.EndTime = newEndTime;
 
                 _event.Color = color;
