@@ -70,7 +70,7 @@ namespace TheTabulator
             if (CalendarController.IsAtThisWeek())
             {
                 int labelIndex = CalendarController.CurrentDayIndex();
-                dateNumbersPanel.Controls[labelIndex].BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(253)))), ((int)(((byte)(200)))));
+                dateNumbersPanel.Controls[labelIndex].BackColor = System.Drawing.Color.Plum;
             }
         }
 
@@ -80,7 +80,7 @@ namespace TheTabulator
         private void ClearHighlight()
         {
             int labelIndex = CalendarController.CurrentDayIndex();
-            dateNumbersPanel.Controls[labelIndex].BackColor = Color.White;
+            dateNumbersPanel.Controls[labelIndex].BackColor = Color.WhiteSmoke;
         }
 
         /// <summary>
