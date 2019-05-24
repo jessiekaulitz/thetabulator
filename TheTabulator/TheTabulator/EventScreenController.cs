@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using DotnetCOREClasses;
 namespace TheTabulator
 {
     public abstract class EventScreenController
@@ -48,7 +48,7 @@ namespace TheTabulator
                 MessageBox.Show("Name field must not be empty.");
                 successful = false;
             }
-            /*
+            
             TimeSpan time = TimeConverter.ConvertTime(startTime);
             if ((time == null) || (time.Hours > 23))
             {
@@ -63,14 +63,14 @@ namespace TheTabulator
                 MessageBox.Show("End time must be valid and on the same day.");
                 successful = false;
             }
-            */
+            
 
             //Only do assignment if no errors
             if (successful)
             {
                 _event.Name = name;
-                //_event.StartTime = _event.StartTime.Date.Add(time);
-                //_event.EndTime = newEndTime;
+                _event.StartTime = _event.StartTime.Date.Add(time);
+                _event.EndTime = newEndTime;
 
                 _event.Color = color;
                 _event.Location = location;
