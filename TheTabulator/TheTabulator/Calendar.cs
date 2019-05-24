@@ -70,7 +70,7 @@ namespace TheTabulator
             if (CalendarController.IsAtThisWeek())
             {
                 int labelIndex = CalendarController.CurrentDayIndex();
-                dateNumbersPanel.Controls[labelIndex].BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(142)))), ((int)(((byte)(169)))), ((int)(((byte)(248)))));
+                dateNumbersPanel.Controls[labelIndex].BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(253)))), ((int)(((byte)(200)))));
             }
         }
 
