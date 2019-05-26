@@ -1,25 +1,32 @@
 ﻿using System;
 
+
 namespace DotnetCOREClasses
 {
     public static class TimeConverter
     {
         public static TimeSpan ConvertTime(string time)
         {
-            int length = time.Length;
             TimeSpan convertedTime;
-            
-            if(length > 2)
+            string newTime = "";
+
+
+            for(int i = 0; i < time.Length; i++)
             {
-                if(time[length - 3] != ':')
+                if(Char.IsDigit(time, i))
                 {
-                    time = time.Insert(length - 2, ":");
+                    newTime += time[i];
                 }
+            }
+            
+            if(newTime.Length > 2)
+            {
+                newTime = newTime.Insert(newTime.Length - 2, ":");
             }
 
             try
             {
-                convertedTime = TimeSpan.Parse(time);
+                convertedTime = TimeSpan.Parse(newTime);
             }
             catch
             {

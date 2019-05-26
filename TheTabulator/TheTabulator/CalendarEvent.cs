@@ -10,7 +10,7 @@ namespace TheTabulator
 {
     public class CalendarEvent
     {
-        public static System.Drawing.Color DEFAULT_COLOR = System.Drawing.Color.Purple;
+        public static System.Drawing.Color DEFAULT_COLOR = System.Drawing.Color.Thistle;
 
         private DateTime _startTime;
         private DateTime _endTime;

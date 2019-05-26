@@ -64,23 +64,52 @@ namespace DotnetCOREClasses.Tests
 
             Assert.AreEqual(expected, actual);
         }
-        
-      
-    }
-}
 
-/*using System;
-using NUnit.Framework;
-
-namespace DotnetCOREClasses.Tests
-{
-    public class TimeConverterTests
-    {
         [Test()]
-        public static void Test1Name()
+        public void TestFormat4() //testing invalid time format 
         {
-            TimeConverter.ConvertTime("10:30");
-            Assert.Pass();
+            string time = "2500";
+
+            TimeSpan expected = new TimeSpan(00, 00, 00);
+
+            TimeSpan actual = TimeConverter.ConvertTime(time);
+
+            Assert.AreEqual(expected, actual);
+        }
+
+        [Test()]
+        public void TestFormat5() //testing invalid time extra input
+        {
+            string time = "13505555";
+
+            TimeSpan expected = new TimeSpan(00, 00, 00);
+
+            TimeSpan actual = TimeConverter.ConvertTime(time);
+
+            Assert.AreEqual(expected, actual);
+        }
+
+
+        [Test()]
+        public void TestAMInTime()  //Testing input to time converter
+        {
+            string time = "7:03 AM";
+            TimeSpan expected = new TimeSpan(7, 03, 00);
+
+            TimeSpan actual = TimeConverter.ConvertTime(time);
+
+            Assert.AreEqual(expected, actual);
+        }
+
+        [Test()]
+        public void TestPMInTime()  //Testing input to time converter
+        {
+            string time = "12:03 PM";
+            TimeSpan expected = new TimeSpan(12, 03, 00);
+
+            TimeSpan actual = TimeConverter.ConvertTime(time);
+
+            Assert.AreEqual(expected, actual);
         }
     }
-}*/
+}
