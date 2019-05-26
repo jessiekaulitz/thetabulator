@@ -29,7 +29,7 @@ namespace TheTabulator
             EventScreen eventScreen = new EventScreen(this);
             eventScreen.ButtonText = "Add Event";
 
-            eventScreen.InitialiseInputFields(_event.Name, _event.StartTime.ToShortTimeString(), _event.EndTime.ToShortTimeString(), _event.StartTime.ToShortDateString(), _event.Location, _event.Color);
+            eventScreen.InitialiseInputFields(_event.Name, _event.StartTime.ToString("HH:mm"), _event.EndTime.ToString("HH:mm"), _event.StartTime.ToShortDateString(), _event.Location, _event.Color);
             eventScreen.ShowDialog();
         }
     }
