@@ -62,6 +62,7 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.BackColor = System.Drawing.Color.WhiteSmoke;
             this.tabPage1.Controls.Add(this.to_DoList1);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Margin = new System.Windows.Forms.Padding(0);
@@ -69,7 +70,6 @@
             this.tabPage1.Size = new System.Drawing.Size(331, 738);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "To-Do List 1";
-            this.tabPage1.UseVisualStyleBackColor = true;
             // 
             // to_DoList1
             // 
