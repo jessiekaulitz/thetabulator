@@ -35,8 +35,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="DotnetCOREClasses, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\DotnetCOREClasses\DotnetCOREClasses\bin\Debug\net472\DotnetCOREClasses.dll</HintPath>
+      <HintPath>..\packages\DotnetCOREClasses.1.0.0\lib\net472\DotnetCOREClasses.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -124,6 +123,7 @@
     <None Include="obj\Debug\TheTabulator.csproj.GenerateResource.cache" />
     <None Include="obj\Debug\TheTabulator.csprojAssemblyReference.cache" />
     <None Include="obj\Release\TheTabulator.csproj.CoreCompileInputs.cache" />
+    <None Include="packages.config" />
     <None Include="Properties\DataSources\Event.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

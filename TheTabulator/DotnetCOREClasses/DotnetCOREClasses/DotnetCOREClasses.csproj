@@ -5,6 +5,7 @@
     <TargetFrameworks>netcoreapp2.1;net472</TargetFrameworks>
     <ApplicationIcon />
     <StartupObject />
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
 
   <ItemGroup>
