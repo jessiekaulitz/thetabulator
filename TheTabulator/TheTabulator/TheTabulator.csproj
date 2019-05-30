@@ -34,6 +34,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="DotnetCOREClasses, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\DotnetCOREClasses.1.0.0\lib\net472\DotnetCOREClasses.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -120,6 +123,7 @@
     <None Include="obj\Debug\TheTabulator.csproj.GenerateResource.cache" />
     <None Include="obj\Debug\TheTabulator.csprojAssemblyReference.cache" />
     <None Include="obj\Release\TheTabulator.csproj.CoreCompileInputs.cache" />
+    <None Include="packages.config" />
     <None Include="Properties\DataSources\Event.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -144,6 +148,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="bin\Release\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
